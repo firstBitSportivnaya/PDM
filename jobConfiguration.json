@@ -1,0 +1,52 @@
+{
+    "$schema": "https://raw.githubusercontent.com/firstBitMarksistskaya/jenkins-lib/develop/resources/schema.json",
+    "stages": {
+        "initSteps": true,
+        "edtValidate": true,
+        "syntaxCheck": true,
+        "smoke": true,
+        "yaxunit": false,
+        "telegram": true,
+        "bdd": false,
+        "sonarqube": true
+    },
+    "edtVersion": "2024.1.3:x86_64",
+    "sourceFormat": "designer",
+    "srcDir": "src/cf",
+    "resultsTransform": {
+        "transformer": "edt-ripper",
+        "removeSupport": true,
+        "supportLevel": 1
+    },
+    "initInfobase": {
+        "initMethod": "fromSource",
+        "extensions": [
+            {
+                "name": "YAXUnit",
+                "initMethod": "fromSource",
+                "path": "src/cfe/YAXUnit",
+                "stages": ["yaxunit"]
+            }
+        ]
+    },
+    "smoke": {
+        "publishToAllureReport": false,
+        "publishToJUnitReport": true
+    },
+    "bdd": {
+        "coverage": true
+    },
+    "yaxunit": {
+        "coverage": true,
+        "publishToAllureReport": false,
+        "publishToJUnitReport": true
+    },
+    "sonarqube": {
+        "waitForQualityGate": true
+    },
+    "notifications": {
+        "telegram": {
+            "onAlways":true 
+        }
+    }
+}

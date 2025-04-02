@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<Subsystem uuid="3ea93a4f-35d4-412c-a646-ccc1978e5e7c">
+		<Properties>
+			<Name>УчетПроектныхОтделов</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Project department accounting</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Учет проектных отделов</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>true</IncludeInCommandInterface>
+			<UseOneCommand>false</UseOneCommand>
+			<Explanation/>
+			<Picture>
+				<xr:Ref>CommonPicture.ПодсистемаУчетПроектныхОтделов</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.КадровыеИзменения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Офисы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Отделы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Должности</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Позиции</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Сотрудники</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ВидыОперацийКадровыеИзменения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.КадроваяИнформация</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ПросмотрОфисов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ЧтениеОфисов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ДобавлениеИзменениеОфисов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ЧтениеОтделов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ПросмотрОтделов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ДобавлениеИзменениеОтделов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ЧтениеПроектов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ПросмотрПроектов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ДобавлениеИзменениеПроектов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ЧтениеДолжностей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ПросмотрДолжностей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ДобавлениеИзменениеДолжностей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ЧтениеПозиций</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ПросмотрПозиций</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ДобавлениеИзменениеПозиций</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ЧтениеСотрудников</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ПросмотрСотрудников</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ДобавлениеИзменениеСотрудников</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ЧтениеКадровойИнформации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ПросмотрКадровойИнформации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ДобавлениеИзменениеКадровойИнформации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ПросмотрПодсистемыУчетПроектныхОтделов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Проекты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ПодсистемаУчетПроектныхОтделов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ВидыКадровыхСобытий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбновлениеИнформационнойБазыУПО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбщегоНазначенияУПОВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ЧтениеКадровыхИзменений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ПросмотрКадровыхИзменений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ДобавлениеИзменениеКадровыхИзменений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.СозданиеКадровыхПривлеченийНаПроектПоДаннымИзВнешнихСистем</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.КадровыйУчетСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.Наставники</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Города</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.Образование</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>

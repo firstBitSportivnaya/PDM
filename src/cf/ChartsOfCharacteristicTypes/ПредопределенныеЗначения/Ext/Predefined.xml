@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="PlanOfCharacteristicKindPredefinedItems" version="2.18">
+	<Item id="d0bd5a10-6883-4f84-8fbd-e4942fa50b38">
+		<Name>НастройкиИнтеграции</Name>
+		<Code>000000001</Code>
+		<Description>Настройки интеграции</Description>
+		<Type/>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="fc038782-210b-4275-b919-384f63567f9c">
+				<Name>КолДнейХраненияИсторииИнтеграции</Name>
+				<Code>000000002</Code>
+				<Description>Количество дней хранения истории интеграции</Description>
+				<Type>
+					<v8:Type>xs:decimal</v8:Type>
+					<v8:NumberQualifiers>
+						<v8:Digits>3</v8:Digits>
+						<v8:FractionDigits>0</v8:FractionDigits>
+						<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+					</v8:NumberQualifiers>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="eb67e98a-7dc9-44a7-bfcb-ab6a49cb7d39">
+				<Name>КолДнейХраненияОшибокИсторииИнтеграции</Name>
+				<Code>000000004</Code>
+				<Description>Количество дней хранения ошибок истории интеграции</Description>
+				<Type>
+					<v8:Type>xs:decimal</v8:Type>
+					<v8:NumberQualifiers>
+						<v8:Digits>3</v8:Digits>
+						<v8:FractionDigits>0</v8:FractionDigits>
+						<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+					</v8:NumberQualifiers>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="ebda194c-36c2-4963-9016-8250e4b12d12">
+		<Name>ОтветственныеПодтверждающиеРегистрациюПользователейБота</Name>
+		<Code>000000003</Code>
+		<Description>Ответственные, подтверждающие регистрацию пользователей бота</Description>
+		<Type>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.Пользователи</v8:Type>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

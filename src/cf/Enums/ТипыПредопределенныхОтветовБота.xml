@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<Enum uuid="621e1156-3e41-42e1-82e9-41491ec26c15">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.ТипыПредопределенныхОтветовБота" category="Ref">
+				<xr:TypeId>428d90d3-34aa-49c6-8571-6281086f9298</xr:TypeId>
+				<xr:ValueId>e01ce69c-f395-4245-bb41-b9413c2833da</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.ТипыПредопределенныхОтветовБота" category="Manager">
+				<xr:TypeId>e1583889-1f16-4016-84d5-0c7e3eb6fbf8</xr:TypeId>
+				<xr:ValueId>78dde82b-bd71-421b-88d8-e0964327f7fc</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.ТипыПредопределенныхОтветовБота" category="List">
+				<xr:TypeId>ee23aa1d-782f-4f82-9795-291c21712260</xr:TypeId>
+				<xr:ValueId>bcdd4155-a905-4bf4-9df2-bcd861d56ee3</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ТипыПредопределенныхОтветовБота</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Типы предопределенных ответов бота</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>false</UseStandardCommands>
+			<Characteristics/>
+			<QuickChoice>true</QuickChoice>
+			<ChoiceMode>BothWays</ChoiceMode>
+			<DefaultListForm/>
+			<DefaultChoiceForm/>
+			<AuxiliaryListForm/>
+			<AuxiliaryChoiceForm/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="001c530c-e92d-4ab6-9519-5b5d9336b62d">
+				<Properties>
+					<Name>ВыборВариантаАвторизации</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выбор варианта авторизации</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="d47cd685-7bec-4151-8962-63e6b9f6e45e">
+				<Properties>
+					<Name>ЗапросТелефона</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Запрос телефона при авторизации</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="d7badf85-321e-4a3a-b176-325bcc304cb7">
+				<Properties>
+					<Name>ЗапросПочты</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Запрос почты при авторизации</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="f92e346e-9c2a-42e9-a9d8-710a100de143">
+				<Properties>
+					<Name>ОповещениеОПодтверждении</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Оповещение о подтверждении</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="5eacb5a0-a820-4551-9d72-fa5f98a3af8b">
+				<Properties>
+					<Name>ТекстПодтвержденияАвторизации</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Текст подтверждения авторизации</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="26d50fad-d417-4914-99c4-08331bbae345">
+				<Properties>
+					<Name>НекорректныйКод</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Некорректный код</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="e112a45e-a82e-4616-acc8-d4be590784dc">
+				<Properties>
+					<Name>ЗапросФИО</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Запрос ФИО при регистрации</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="12f8d55b-fbe0-4aa1-9131-faaae1723cc5">
+				<Properties>
+					<Name>ОжиданиеРегистрации</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ожидание регистрации</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="8c94fc61-ae6a-4648-b39f-7c314e563256">
+				<Properties>
+					<Name>ОповещениеОтветственныхОНовом</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Оповещение ответственных о новом запросе при регистрации</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="f122cf8c-0f40-49c0-b0dd-bdacb1adfb88">
+				<Properties>
+					<Name>ОповещениеОтветственныхОбОкончании</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Оповещение ответственных об окончании регистрации</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="1d6b8688-c537-4aa1-a752-b34e5966c3bd">
+				<Properties>
+					<Name>НедоступностьФункционала</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Недоступность функционала при регистрации</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="65724b14-5d2c-4b76-b93f-14c55422790e">
+				<Properties>
+					<Name>ОкончаниеРегистрации</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Окончание регистрации</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="3255b7be-4bd6-461b-b00e-781093d6a3f3">
+				<Properties>
+					<Name>ТекстОтвета</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Текст ответа</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="82240edc-15ab-408d-9e8f-e7c0508b189f">
+				<Properties>
+					<Name>ТекстПодсказкиОтвета</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Текст подсказки ответа</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="059748fd-ba4a-4e54-815f-38c1c89434e1">
+				<Properties>
+					<Name>КомандаНедоступнаВInlineMode</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Команда недоступна в inline-mode</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="8ef09e12-2dd0-44c4-a147-30e55736a999">
+				<Properties>
+					<Name>ТекстОповещенияНачалоВидеоЧата</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Текст оповещения начало видео-чата</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="8e125ce3-fa36-4450-98c6-0b19bb88cbb7">
+				<Properties>
+					<Name>ТекстОповещенияКонецВидеоЧата</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Текст оповещения конец видео-чата</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

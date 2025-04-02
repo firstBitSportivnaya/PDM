@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="38">
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="39"/>
+			<ChildItems>
+				<InputField name="Наименование" id="1">
+					<DataPath>Объект.Description</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="3"/>
+				</InputField>
+				<InputField name="Тип" id="40">
+					<DataPath>Объект.Тип</DataPath>
+					<ContextMenu name="ТипКонтекстноеМеню" id="41"/>
+					<ExtendedTooltip name="ТипРасширеннаяПодсказка" id="42"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="КраткоеОписание" id="35">
+			<DataPath>Объект.КраткоеОписание</DataPath>
+			<ContextMenu name="КраткоеОписаниеКонтекстноеМеню" id="36"/>
+			<ExtendedTooltip name="КраткоеОписаниеРасширеннаяПодсказка" id="37"/>
+		</InputField>
+		<Table name="СвойстваОбъекта" id="4">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.СвойстваОбъекта</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="СвойстваОбъектаКонтекстноеМеню" id="5"/>
+			<AutoCommandBar name="СвойстваОбъектаКоманднаяПанель" id="6"/>
+			<ExtendedTooltip name="СвойстваОбъектаРасширеннаяПодсказка" id="7"/>
+			<SearchStringAddition name="СвойстваОбъектаСтрокаПоиска" id="8">
+				<AdditionSource>
+					<Item>СвойстваОбъекта</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СвойстваОбъектаСтрокаПоискаКонтекстноеМеню" id="9"/>
+				<ExtendedTooltip name="СвойстваОбъектаСтрокаПоискаРасширеннаяПодсказка" id="10"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СвойстваОбъектаСостояниеПросмотра" id="11">
+				<AdditionSource>
+					<Item>СвойстваОбъекта</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СвойстваОбъектаСостояниеПросмотраКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="СвойстваОбъектаСостояниеПросмотраРасширеннаяПодсказка" id="13"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СвойстваОбъектаУправлениеПоиском" id="14">
+				<AdditionSource>
+					<Item>СвойстваОбъекта</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СвойстваОбъектаУправлениеПоискомКонтекстноеМеню" id="15"/>
+				<ExtendedTooltip name="СвойстваОбъектаУправлениеПоискомРасширеннаяПодсказка" id="16"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<InputField name="СвойстваОбъектаИмяСвойства" id="23">
+					<DataPath>Объект.СвойстваОбъекта.ИмяСвойства</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СвойстваОбъектаИмяСвойстваКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="СвойстваОбъектаИмяСвойстваРасширеннаяПодсказка" id="25"/>
+				</InputField>
+				<InputField name="СвойстваОбъектаСистемноеИмя" id="20">
+					<DataPath>Объект.СвойстваОбъекта.СистемноеИмя</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СвойстваОбъектаСистемноеИмяКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="СвойстваОбъектаСистемноеИмяРасширеннаяПодсказка" id="22"/>
+				</InputField>
+				<InputField name="СвойстваОбъектаКраткоеОписание" id="26">
+					<DataPath>Объект.СвойстваОбъекта.КраткоеОписание</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СвойстваОбъектаКраткоеОписаниеКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="СвойстваОбъектаКраткоеОписаниеРасширеннаяПодсказка" id="28"/>
+				</InputField>
+				<InputField name="СвойстваОбъектаЗначениеПеречисления" id="43">
+					<DataPath>Объект.СвойстваОбъекта.ЗначениеПеречисления</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СвойстваОбъектаЗначениеПеречисленияКонтекстноеМеню" id="44"/>
+					<ExtendedTooltip name="СвойстваОбъектаЗначениеПеречисленияРасширеннаяПодсказка" id="45"/>
+				</InputField>
+				<InputField name="СвойстваОбъектаТипДанных" id="29">
+					<DataPath>Объект.СвойстваОбъекта.ТипДанных</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ListChoiceMode>true</ListChoiceMode>
+					<ContextMenu name="СвойстваОбъектаТипДанныхКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="СвойстваОбъектаТипДанныхРасширеннаяПодсказка" id="31"/>
+				</InputField>
+				<InputField name="СвойстваОбъектаОпределениеОбъекта" id="32">
+					<DataPath>Объект.СвойстваОбъекта.ОпределениеОбъекта</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СвойстваОбъектаОпределениеОбъектаКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="СвойстваОбъектаОпределениеОбъектаРасширеннаяПодсказка" id="34"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.СтруктурыДанныхREST</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>СвойстваОбъектаСистемноеИмя</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>СвойстваОбъектаТипДанных</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>СвойстваОбъектаОпределениеОбъекта</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.Тип</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.ТипыСтруктурДанныхREST.Объект</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Видимость</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>СвойстваОбъектаСистемноеИмя</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>СвойстваОбъектаТипДанных</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>СвойстваОбъектаОпределениеОбъекта</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.Тип</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.ТипыСтруктурДанныхREST.Перечисление</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Видимость</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>СвойстваОбъектаЗначениеПеречисления</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.Тип</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.ТипыСтруктурДанныхREST.Объект</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Видимость</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>СвойстваОбъектаЗначениеПеречисления</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.Тип</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.ТипыСтруктурДанныхREST.Перечисление</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Видимость</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+</Form>

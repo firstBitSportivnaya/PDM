@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<Subsystem uuid="689bb894-6e52-4eb8-b728-5e4683479449">
+		<Properties>
+			<Name>Боты</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Bots</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Боты</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>true</IncludeInCommandInterface>
+			<UseOneCommand>false</UseOneCommand>
+			<Explanation/>
+			<Picture>
+				<xr:Ref>CommonPicture.ПодсистемаБоты</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ПодсистемаБоты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ТипыБотов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИнтеграцияСБотамиСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ТипыСообщенийTelegramBot</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.ВыполнениеЗаданийБотов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.ПолучениеОбновленийБотов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ТипыСообщенийПользователяБота</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИнтеграцияСБотамиСлужебныйСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИнтеграцияСTelegramBotСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ТипыЗаданийБота</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ЧтениеБотов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ПросмотрБотов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.РедактированиеБотов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ЧтениеВложенностиКнопокМеню</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ПросмотрВложенностиКнопокМеню</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.РедактированиеВложенностиКнопокМеню</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ЧтениеЗаданийБотов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ПросмотрЗаданийБотов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.РедактированиеЗаданийБотов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ЧтениеКомандБотов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ПросмотрКомандБотов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.РедактированиеКомандБотов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ЧтениеШаговВыполненияЗаданий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ПросмотрШаговВыполненияЗаданий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.РедактированиеШаговВыполненияЗаданий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ЧтениеВыполненияЗаданийБотов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ПросмотрВыполненияЗаданийБотов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.РедактированиеВыполненияЗаданийБотов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ЧтениеИдентификаторовОбновленийБотов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ПросмотрИдентификаторовОбновленийБотов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.РедактированиеИдентификаторовОбновленийБотов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ЧтениеОткрытыхМенюПользователейБота</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ПросмотрОткрытыхМенюПользователейБота</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.РедактированиеОткрытыхМенюПользователейБота</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ЧтениеРегистрацииПользователейБота</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ПросмотрРегистрацииПользователейБота</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.РедактированиеРегистрацииПользователейБота</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ЧтениеСообщенийПользователейБотов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ПросмотрСообщенийПользователейБотов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.РедактированиеСообщенийПользователейБотов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ЧтениеСоответствияТиповСообщенийБотовМетодовИнтеграции</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ПросмотрСоответствияТиповСообщенийБотовМетодовИнтеграции</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.РедактированиеСоответствияТиповСообщенийБотовМетодовИнтеграции</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ПросмотрПодсистемыБоты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ЧтениеАдресаПубликацииИнформационнойБазыДляБотов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ПросмотрАдресаПубликацииИнформационнойБазыДляБотов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.РедактированиеАдресаПубликацииИнформационнойБазыДляБотов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ЧтениеУчастниковВидеоЧатов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ПросмотрУчастниковВидеоЧатов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.РедактированиеУчастниковВидеоЧатов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ЧтениеКоличествоДнейХраненияВыполненияЗаданийБотов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ПросмотрКоличествоДнейХраненияВыполненияЗаданийБотов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ЧтениеКоличествоДнейХраненияСообщенийБотов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.РедактированиеКоличествоДнейХраненияВыполненияЗаданийБотов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ПросмотрКоличествоДнейХраненияСообщенийБотов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.РедактированиеКоличествоДнейХраненияСообщенийБотов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.ОчисткаСообщенийПользователейБотов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.ОчисткаВыполненияЗаданийБотов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ПросмотрФормыНастроекПодсистемыБотов</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects>
+			<Subsystem>МенюКомандыЗадания</Subsystem>
+			<Subsystem>Общее</Subsystem>
+			<Subsystem>Прочее</Subsystem>
+		</ChildObjects>
+	</Subsystem>
+</MetaDataObject>

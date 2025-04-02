@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.18">
+	<Item id="4b6161ec-0e00-437e-83e4-d856a93f653e">
+		<Name>ПолучениеКомпонентовИзJira</Name>
+		<Code>000000001</Code>
+		<Description>Получение компонентов из JIRA</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="c2c6ad26-f298-4358-89c3-b1bd03d0929a">
+		<Name>ПоискПоJQLЗапросуВJira</Name>
+		<Code>000000002</Code>
+		<Description>Поиск по JQL-запросу в JIRA</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

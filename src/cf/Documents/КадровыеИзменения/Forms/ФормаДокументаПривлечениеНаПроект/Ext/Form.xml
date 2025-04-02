@@ -1,0 +1,377 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<AutoTitle>false</AutoTitle>
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<ButtonGroup name="ГруппаКнопкиКоманднойПанели" id="1">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Группа кнопки командной панели</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Command bar button group</v8:content>
+					</v8:item>
+				</Title>
+				<CommandSource>Form</CommandSource>
+				<ExtendedTooltip name="ГруппаКнопкиКоманднойПанелиРасширеннаяПодсказка" id="2"/>
+				<ChildItems>
+					<ButtonGroup name="ГруппаВажныеКоманды" id="3">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Группа важные команды</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Important commands group</v8:content>
+							</v8:item>
+						</Title>
+						<ExtendedTooltip name="ГруппаВажныеКомандыРасширеннаяПодсказка" id="4"/>
+						<ChildItems>
+							<Popup name="ПодменюПечать" id="5">
+								<Title>
+									<v8:item>
+										<v8:lang>en</v8:lang>
+										<v8:content>Print</v8:content>
+									</v8:item>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Печать</v8:content>
+									</v8:item>
+								</Title>
+								<Picture>
+									<xr:Ref>StdPicture.Print</xr:Ref>
+									<xr:LoadTransparent>true</xr:LoadTransparent>
+								</Picture>
+								<Representation>PictureAndText</Representation>
+								<ExtendedTooltip name="ПодменюПечатьРасширеннаяПодсказка" id="6"/>
+							</Popup>
+						</ChildItems>
+					</ButtonGroup>
+					<ButtonGroup name="ГруппаГлобальныеКоманды" id="7">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Группа глобальные команды</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Global commands group</v8:content>
+							</v8:item>
+						</Title>
+						<CommandSource>FormCommandPanelGlobalCommands</CommandSource>
+						<ExtendedTooltip name="ГруппаГлобальныеКомандыРасширеннаяПодсказка" id="8"/>
+						<ChildItems>
+							<Popup name="ПодменюЗаполнить" id="9">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Заполнить</v8:content>
+									</v8:item>
+									<v8:item>
+										<v8:lang>en</v8:lang>
+										<v8:content>Fill</v8:content>
+									</v8:item>
+								</Title>
+								<ExtendedTooltip name="ПодменюЗаполнитьРасширеннаяПодсказка" id="10"/>
+							</Popup>
+							<Popup name="ПодменюОтчеты" id="11">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Отчеты</v8:content>
+									</v8:item>
+									<v8:item>
+										<v8:lang>en</v8:lang>
+										<v8:content>Reports</v8:content>
+									</v8:item>
+								</Title>
+								<ExtendedTooltip name="ПодменюОтчетыРасширеннаяПодсказка" id="12"/>
+							</Popup>
+						</ChildItems>
+					</ButtonGroup>
+				</ChildItems>
+			</ButtonGroup>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="AfterWrite">ПослеЗаписи</Event>
+		<Event name="AfterWriteAtServer">ПослеЗаписиНаСервере</Event>
+		<Event name="OnReadAtServer">ПриЧтенииНаСервере</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeWrite">ПередЗаписью</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаВертикальная" id="21">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа вертикальная</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Vertical group</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<United>false</United>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаВертикальнаяРасширеннаяПодсказка" id="22"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаНомерДата" id="23">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа номер дата</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Number date group</v8:content>
+						</v8:item>
+					</Title>
+					<Representation>None</Representation>
+					<United>false</United>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаНомерДатаРасширеннаяПодсказка" id="24"/>
+					<ChildItems>
+						<InputField name="Номер" id="25">
+							<DataPath>Объект.Number</DataPath>
+							<ContextMenu name="НомерКонтекстноеМеню" id="26"/>
+							<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="27"/>
+						</InputField>
+						<InputField name="Дата" id="28">
+							<DataPath>Объект.Date</DataPath>
+							<ContextMenu name="ДатаКонтекстноеМеню" id="29"/>
+							<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="30"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаВидДатаСобытия" id="31">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа вид дата события</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Type date event group</v8:content>
+						</v8:item>
+					</Title>
+					<Representation>None</Representation>
+					<United>false</United>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаВидДатаСобытияРасширеннаяПодсказка" id="32"/>
+					<ChildItems>
+						<InputField name="ВидСобытия" id="33">
+							<DataPath>Объект.ВидСобытия</DataPath>
+							<ListChoiceMode>true</ListChoiceMode>
+							<ContextMenu name="ВидСобытияКонтекстноеМеню" id="34"/>
+							<ExtendedTooltip name="ВидСобытияРасширеннаяПодсказка" id="35"/>
+							<Events>
+								<Event name="OnChange">ВидСобытияПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="ДатаСобытия" id="36">
+							<DataPath>Объект.ДатаСобытия</DataPath>
+							<ContextMenu name="ДатаСобытияКонтекстноеМеню" id="37"/>
+							<ExtendedTooltip name="ДатаСобытияРасширеннаяПодсказка" id="38"/>
+							<Events>
+								<Event name="OnChange">ДатаСобытияПриИзменении</Event>
+							</Events>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаСотрудникСубподряд" id="69">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Employee subcontracting group</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа сотрудник субподряд</v8:content>
+						</v8:item>
+					</Title>
+					<Representation>None</Representation>
+					<United>false</United>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаСотрудникСубподрядРасширеннаяПодсказка" id="70"/>
+					<ChildItems>
+						<InputField name="Сотрудник" id="39">
+							<DataPath>Объект.Сотрудник</DataPath>
+							<ContextMenu name="СотрудникКонтекстноеМеню" id="40"/>
+							<ExtendedTooltip name="СотрудникРасширеннаяПодсказка" id="41"/>
+							<Events>
+								<Event name="OnChange">СотрудникПриИзменении</Event>
+							</Events>
+						</InputField>
+						<CheckBoxField name="Субподряд" id="71">
+							<DataPath>Объект.Субподряд</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="СубподрядКонтекстноеМеню" id="72"/>
+							<ExtendedTooltip name="СубподрядРасширеннаяПодсказка" id="73"/>
+							<Events>
+								<Event name="OnChange">СубподрядПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаПроектПозиция" id="76">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа проект позиция</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Project position group</v8:content>
+						</v8:item>
+					</Title>
+					<Representation>None</Representation>
+					<United>false</United>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаПроектПозицияРасширеннаяПодсказка" id="77"/>
+					<ChildItems>
+						<InputField name="Проект" id="78">
+							<DataPath>Объект.Проект</DataPath>
+							<ContextMenu name="ПроектКонтекстноеМеню" id="79"/>
+							<ExtendedTooltip name="ПроектРасширеннаяПодсказка" id="80"/>
+						</InputField>
+						<InputField name="Позиция" id="81">
+							<DataPath>Объект.Позиция</DataPath>
+							<ContextMenu name="ПозицияКонтекстноеМеню" id="82"/>
+							<ExtendedTooltip name="ПозицияРасширеннаяПодсказка" id="83"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаНаставничество" id="88">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа наставничество</v8:content>
+						</v8:item>
+					</Title>
+					<Representation>None</Representation>
+					<United>false</United>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаНаставничествоРасширеннаяПодсказка" id="89"/>
+					<ChildItems>
+						<CheckBoxField name="Обучаемый" id="90">
+							<DataPath>Объект.Обучаемый</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ОбучаемыйКонтекстноеМеню" id="91"/>
+							<ExtendedTooltip name="ОбучаемыйРасширеннаяПодсказка" id="92"/>
+							<Events>
+								<Event name="OnChange">ОбучаемыйПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+						<InputField name="Наставник" id="93">
+							<DataPath>Объект.Наставник</DataPath>
+							<ContextMenu name="НаставникКонтекстноеМеню" id="94"/>
+							<ExtendedTooltip name="НаставникРасширеннаяПодсказка" id="95"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаДанныеСотрудника" id="74">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Employee data</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Данные сотрудника</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<United>false</United>
+					<ExtendedTooltip name="ГруппаДанныеСотрудникаРасширеннаяПодсказка" id="75"/>
+					<ChildItems>
+						<InputField name="Офис" id="42">
+							<DataPath>Объект.Офис</DataPath>
+							<ContextMenu name="ОфисКонтекстноеМеню" id="43"/>
+							<ExtendedTooltip name="ОфисРасширеннаяПодсказка" id="44"/>
+						</InputField>
+						<UsualGroup name="ГруппаДанныеСотрудникаОтделДолжность" id="84">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа данные сотрудника отдел должность</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Employee data department position group</v8:content>
+								</v8:item>
+							</Title>
+							<Representation>None</Representation>
+							<United>false</United>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДанныеСотрудникаОтделДолжностьРасширеннаяПодсказка" id="85"/>
+							<ChildItems>
+								<InputField name="Отдел" id="52">
+									<DataPath>Объект.Отдел</DataPath>
+									<ContextMenu name="ОтделКонтекстноеМеню" id="53"/>
+									<ExtendedTooltip name="ОтделРасширеннаяПодсказка" id="54"/>
+								</InputField>
+								<InputField name="Должность" id="60">
+									<DataPath>Объект.Должность</DataPath>
+									<ContextMenu name="ДолжностьКонтекстноеМеню" id="61"/>
+									<ExtendedTooltip name="ДолжностьРасширеннаяПодсказка" id="62"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаОтветственныйКомментарий" id="86">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа ответственный комментарий</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Responsible comment group</v8:content>
+						</v8:item>
+					</Title>
+					<Representation>None</Representation>
+					<United>false</United>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаОтветственныйКомментарийРасширеннаяПодсказка" id="87"/>
+					<ChildItems>
+						<InputField name="Ответственный" id="63">
+							<DataPath>Объект.Ответственный</DataPath>
+							<ContextMenu name="ОтветственныйКонтекстноеМеню" id="64"/>
+							<ExtendedTooltip name="ОтветственныйРасширеннаяПодсказка" id="65"/>
+						</InputField>
+						<InputField name="Комментарий" id="66">
+							<DataPath>Объект.Комментарий</DataPath>
+							<ContextMenu name="КомментарийКонтекстноеМеню" id="67"/>
+							<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="68"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.КадровыеИзменения</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+</Form>

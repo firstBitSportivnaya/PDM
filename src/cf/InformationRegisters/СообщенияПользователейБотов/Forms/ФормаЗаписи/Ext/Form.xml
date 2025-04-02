@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="Период" id="1">
+			<DataPath>Запись.Period</DataPath>
+			<ContextMenu name="ПериодКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ПериодРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Бот" id="4">
+			<DataPath>Запись.Бот</DataPath>
+			<ContextMenu name="БотКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="БотРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="ИсточникСообщения" id="22">
+			<ContextMenu name="ИсточникСообщенияКонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="ИсточникСообщенияРасширеннаяПодсказка" id="24"/>
+		</InputField>
+		<InputField name="ЗаданиеБота" id="25">
+			<ContextMenu name="ЗаданиеБотаКонтекстноеМеню" id="26"/>
+			<ExtendedTooltip name="ЗаданиеБотаРасширеннаяПодсказка" id="27"/>
+		</InputField>
+		<InputField name="Пользователь" id="7">
+			<DataPath>Запись.Пользователь</DataPath>
+			<ContextMenu name="ПользовательКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ПользовательРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="ТипСообщения" id="28">
+			<DataPath>Запись.ТипСообщения</DataPath>
+			<ContextMenu name="ТипСообщенияКонтекстноеМеню" id="29"/>
+			<ExtendedTooltip name="ТипСообщенияРасширеннаяПодсказка" id="30"/>
+		</InputField>
+		<InputField name="Получатель" id="31">
+			<DataPath>Запись.Получатель</DataPath>
+			<ContextMenu name="ПолучательКонтекстноеМеню" id="32"/>
+			<ExtendedTooltip name="ПолучательРасширеннаяПодсказка" id="33"/>
+		</InputField>
+		<InputField name="ИдентификаторСообщения" id="10">
+			<DataPath>Запись.ИдентификаторСообщения</DataPath>
+			<ContextMenu name="ИдентификаторСообщенияКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ИдентификаторСообщенияРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<InputField name="ИдентификаторОтвета" id="19">
+			<DataPath>Запись.ИдентификаторОтвета</DataPath>
+			<ContextMenu name="ИдентификаторОтветаКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="ИдентификаторОтветаРасширеннаяПодсказка" id="21"/>
+		</InputField>
+		<InputField name="Текст" id="13">
+			<DataPath>Запись.Текст</DataPath>
+			<TitleLocation>Top</TitleLocation>
+			<AutoMaxHeight>false</AutoMaxHeight>
+			<MultiLine>true</MultiLine>
+			<ContextMenu name="ТекстКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ТекстРасширеннаяПодсказка" id="15"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.СообщенияПользователейБотов</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

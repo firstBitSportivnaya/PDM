@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<UsualGroup name="ГруппаФормы" id="52">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа формы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа формы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаФормыРасширеннаяПодсказка" id="53"/>
+			<ChildItems>
+				<InputField name="НастройкаИнтеграции" id="1">
+					<DataPath>Запись.НастройкаИнтеграции</DataPath>
+					<ContextMenu name="НастройкаИнтеграцииКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="НастройкаИнтеграцииРасширеннаяПодсказка" id="3"/>
+				</InputField>
+				<InputField name="ИдентификаторЧата" id="4">
+					<DataPath>Запись.ИдентификаторЧата</DataPath>
+					<ContextMenu name="ИдентификаторЧатаКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="ИдентификаторЧатаРасширеннаяПодсказка" id="6"/>
+				</InputField>
+				<LabelDecoration name="Декорация1" id="49">
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>* Все числовые поля - идентификаторы сообщений бота</v8:content>
+						</v8:item>
+					</Title>
+					<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+					<ContextMenu name="Декорация1КонтекстноеМеню" id="50"/>
+					<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="51"/>
+				</LabelDecoration>
+				<UsualGroup name="ГруппаДанныеАвторизации" id="37">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Данные авторизации</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа данные авторизации</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<ExtendedTooltip name="ГруппаДанныеАвторизацииРасширеннаяПодсказка" id="38"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаВариантТелефонПочта" id="39">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа вариант телефон почта</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа вариант телефон почта</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаВариантТелефонПочтаРасширеннаяПодсказка" id="40"/>
+							<ChildItems>
+								<InputField name="ВыборВариантаАвторизации" id="7">
+									<DataPath>Запись.ВыборВариантаАвторизации</DataPath>
+									<ContextMenu name="ВыборВариантаАвторизацииКонтекстноеМеню" id="8"/>
+									<ExtendedTooltip name="ВыборВариантаАвторизацииРасширеннаяПодсказка" id="9"/>
+								</InputField>
+								<InputField name="ЗапросТелефонаПочты" id="10">
+									<DataPath>Запись.ЗапросТелефонаПочты</DataPath>
+									<ContextMenu name="ЗапросТелефонаПочтыКонтекстноеМеню" id="11"/>
+									<ExtendedTooltip name="ЗапросТелефонаПочтыРасширеннаяПодсказка" id="12"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<InputField name="ВыбранныйВариант" id="13">
+							<DataPath>Запись.ВыбранныйВариант</DataPath>
+							<ContextMenu name="ВыбранныйВариантКонтекстноеМеню" id="14"/>
+							<ExtendedTooltip name="ВыбранныйВариантРасширеннаяПодсказка" id="15"/>
+						</InputField>
+						<InputField name="КодПроверки" id="16">
+							<DataPath>Запись.КодПроверки</DataPath>
+							<ContextMenu name="КодПроверкиКонтекстноеМеню" id="17"/>
+							<ExtendedTooltip name="КодПроверкиРасширеннаяПодсказка" id="18"/>
+						</InputField>
+						<UsualGroup name="ГруппаПодтверждениеАвторизации" id="57">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа подтверждение авторизации</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа подтверждение авторизации</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаПодтверждениеАвторизацииРасширеннаяПодсказка" id="58"/>
+							<ChildItems>
+								<InputField name="ОповещениеОПодтверждении" id="19">
+									<DataPath>Запись.ОповещениеОПодтверждении</DataPath>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Заполнено, когда пользователь был найден в базе по телефону или почте и ему отправлен подтверждающий код</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ToolTipRepresentation>Button</ToolTipRepresentation>
+									<ContextMenu name="ОповещениеОПодтвержденииКонтекстноеМеню" id="20"/>
+									<ExtendedTooltip name="ОповещениеОПодтвержденииРасширеннаяПодсказка" id="21"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаДанныеРегистрации" id="41">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Данные регистрации</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа данные регистрации</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<ExtendedTooltip name="ГруппаДанныеРегистрацииРасширеннаяПодсказка" id="42"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаФИО" id="43">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа ФИО</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа ФИО</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ThroughAlign>DontUse</ThroughAlign>
+							<ExtendedTooltip name="ГруппаФИОРасширеннаяПодсказка" id="44"/>
+							<ChildItems>
+								<InputField name="ЗапросФИО" id="22">
+									<DataPath>Запись.ЗапросФИО</DataPath>
+									<ContextMenu name="ЗапросФИОКонтекстноеМеню" id="23"/>
+									<ExtendedTooltip name="ЗапросФИОРасширеннаяПодсказка" id="24"/>
+								</InputField>
+								<InputField name="ОповещениеОНекорректномФИО" id="25">
+									<DataPath>Запись.ОповещениеОНекорректномФИО</DataPath>
+									<ContextMenu name="ОповещениеОНекорректномФИОКонтекстноеМеню" id="26"/>
+									<ExtendedTooltip name="ОповещениеОНекорректномФИОРасширеннаяПодсказка" id="27"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаОжидания" id="45">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа ожидания</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа ожидания</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ThroughAlign>DontUse</ThroughAlign>
+							<ExtendedTooltip name="ГруппаОжиданияРасширеннаяПодсказка" id="46"/>
+							<ChildItems>
+								<InputField name="ОповещениеОбОжидании" id="28">
+									<DataPath>Запись.ОповещениеОбОжидании</DataPath>
+									<ContextMenu name="ОповещениеОбОжиданииКонтекстноеМеню" id="29"/>
+									<ExtendedTooltip name="ОповещениеОбОжиданииРасширеннаяПодсказка" id="30"/>
+								</InputField>
+								<InputField name="ОповещениеОНедоступностиФункционала" id="31">
+									<DataPath>Запись.ОповещениеОНедоступностиФункционала</DataPath>
+									<ContextMenu name="ОповещениеОНедоступностиФункционалаКонтекстноеМеню" id="32"/>
+									<ExtendedTooltip name="ОповещениеОНедоступностиФункционалаРасширеннаяПодсказка" id="33"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаОкончаниеРегистрации" id="47">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Окончание авторизации / регистрации</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа окончание регистрации</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаОкончаниеРегистрацииРасширеннаяПодсказка" id="48"/>
+					<ChildItems>
+						<InputField name="ОповещенииОбОкончании" id="34">
+							<DataPath>Запись.ОповещенииОбОкончании</DataPath>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Если заполнено, то регистрация окончена</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ToolTipRepresentation>Button</ToolTipRepresentation>
+							<ContextMenu name="ОповещенииОбОкончанииКонтекстноеМеню" id="35"/>
+							<ExtendedTooltip name="ОповещенииОбОкончанииРасширеннаяПодсказка" id="36"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.РегистрацияПользователейБота</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

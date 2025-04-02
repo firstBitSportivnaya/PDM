@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="AfterWrite">ПослеЗаписи</Event>
+		<Event name="AfterWriteAtServer">ПослеЗаписиНаСервере</Event>
+		<Event name="OnReadAtServer">ПриЧтенииНаСервере</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeWrite">ПередЗаписью</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Статус" id="10">
+			<DataPath>Объект.Статус</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<MaxWidth>15</MaxWidth>
+			<ContextMenu name="СтатусКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="СтатусРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<UsualGroup name="ГруппаДатаНомер" id="69">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа дата номер</v8:content>
+				</v8:item>
+			</Title>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаДатаНомерРасширеннаяПодсказка" id="70"/>
+			<ChildItems>
+				<InputField name="Номер" id="1">
+					<DataPath>Объект.Number</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<MaxWidth>12</MaxWidth>
+					<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+				</InputField>
+				<InputField name="Дата" id="4">
+					<DataPath>Объект.Date</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаТипОбученияСтатус" id="71">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа тип обучения статус</v8:content>
+				</v8:item>
+			</Title>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаТипОбученияСтатусРасширеннаяПодсказка" id="72"/>
+			<ChildItems>
+				<InputField name="ТипОбучения" id="7">
+					<DataPath>Объект.ТипОбучения</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТипОбученияКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="ТипОбученияРасширеннаяПодсказка" id="9"/>
+				</InputField>
+				<InputField name="ДатаОбучения" id="73">
+					<ContextMenu name="ДатаОбученияКонтекстноеМеню" id="74"/>
+					<ExtendedTooltip name="ДатаОбученияРасширеннаяПодсказка" id="75"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Наименование" id="19">
+			<DataPath>Объект.Наименование</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="21"/>
+		</InputField>
+		<UsualGroup name="ГруппаКоличествоЧасов" id="76">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа количество часов</v8:content>
+				</v8:item>
+			</Title>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаКоличествоЧасовРасширеннаяПодсказка" id="77"/>
+			<ChildItems>
+				<CheckBoxField name="ОбщееКоличествоЧасов" id="13">
+					<DataPath>Объект.ОбщееКоличествоЧасов</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ОбщееКоличествоЧасовКонтекстноеМеню" id="14"/>
+					<ExtendedTooltip name="ОбщееКоличествоЧасовРасширеннаяПодсказка" id="15"/>
+					<Events>
+						<Event name="OnChange">ОбщееКоличествоЧасовПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<InputField name="КоличествоЧасов" id="16">
+					<DataPath>Объект.КоличествоЧасов</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КоличествоЧасовКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="КоличествоЧасовРасширеннаяПодсказка" id="18"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Pages name="Страницы" id="22">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</Title>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="23"/>
+			<ChildItems>
+				<Page name="ГруппаКомпетенции" id="45">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Компетенции</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ГруппаКомпетенцииРасширеннаяПодсказка" id="46"/>
+					<ChildItems>
+						<Table name="Компетенции" id="47">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.Компетенции</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="КомпетенцииКонтекстноеМеню" id="48"/>
+							<AutoCommandBar name="КомпетенцииКоманднаяПанель" id="49"/>
+							<ExtendedTooltip name="КомпетенцииРасширеннаяПодсказка" id="50"/>
+							<SearchStringAddition name="КомпетенцииСтрокаПоиска" id="51">
+								<AdditionSource>
+									<Item>Компетенции</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="КомпетенцииСтрокаПоискаКонтекстноеМеню" id="52"/>
+								<ExtendedTooltip name="КомпетенцииСтрокаПоискаРасширеннаяПодсказка" id="53"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="КомпетенцииСостояниеПросмотра" id="54">
+								<AdditionSource>
+									<Item>Компетенции</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="КомпетенцииСостояниеПросмотраКонтекстноеМеню" id="55"/>
+								<ExtendedTooltip name="КомпетенцииСостояниеПросмотраРасширеннаяПодсказка" id="56"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="КомпетенцииУправлениеПоиском" id="57">
+								<AdditionSource>
+									<Item>Компетенции</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="КомпетенцииУправлениеПоискомКонтекстноеМеню" id="58"/>
+								<ExtendedTooltip name="КомпетенцииУправлениеПоискомРасширеннаяПодсказка" id="59"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="КомпетенцииНомерСтроки" id="60">
+									<DataPath>Объект.Компетенции.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="КомпетенцииНомерСтрокиКонтекстноеМеню" id="61"/>
+									<ExtendedTooltip name="КомпетенцииНомерСтрокиРасширеннаяПодсказка" id="62"/>
+								</LabelField>
+								<InputField name="КомпетенцииКомпетенция" id="63">
+									<DataPath>Объект.Компетенции.Компетенция</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="КомпетенцииКомпетенцияКонтекстноеМеню" id="64"/>
+									<ExtendedTooltip name="КомпетенцииКомпетенцияРасширеннаяПодсказка" id="65"/>
+								</InputField>
+								<InputField name="КомпетенцииКоличествоЧасов" id="66">
+									<DataPath>Объект.Компетенции.КоличествоЧасов</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="КомпетенцииКоличествоЧасовКонтекстноеМеню" id="67"/>
+									<ExtendedTooltip name="КомпетенцииКоличествоЧасовРасширеннаяПодсказка" id="68"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаУчастники" id="24">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Участники</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ГруппаУчастникиРасширеннаяПодсказка" id="25"/>
+					<ChildItems>
+						<Table name="Участники" id="26">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.Участники</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="УчастникиКонтекстноеМеню" id="27"/>
+							<AutoCommandBar name="УчастникиКоманднаяПанель" id="28"/>
+							<ExtendedTooltip name="УчастникиРасширеннаяПодсказка" id="29"/>
+							<SearchStringAddition name="УчастникиСтрокаПоиска" id="30">
+								<AdditionSource>
+									<Item>Участники</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="УчастникиСтрокаПоискаКонтекстноеМеню" id="31"/>
+								<ExtendedTooltip name="УчастникиСтрокаПоискаРасширеннаяПодсказка" id="32"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="УчастникиСостояниеПросмотра" id="33">
+								<AdditionSource>
+									<Item>Участники</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="УчастникиСостояниеПросмотраКонтекстноеМеню" id="34"/>
+								<ExtendedTooltip name="УчастникиСостояниеПросмотраРасширеннаяПодсказка" id="35"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="УчастникиУправлениеПоиском" id="36">
+								<AdditionSource>
+									<Item>Участники</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="УчастникиУправлениеПоискомКонтекстноеМеню" id="37"/>
+								<ExtendedTooltip name="УчастникиУправлениеПоискомРасширеннаяПодсказка" id="38"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="УчастникиНомерСтроки" id="39">
+									<DataPath>Объект.Участники.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="УчастникиНомерСтрокиКонтекстноеМеню" id="40"/>
+									<ExtendedTooltip name="УчастникиНомерСтрокиРасширеннаяПодсказка" id="41"/>
+								</LabelField>
+								<InputField name="УчастникиСотрудник" id="42">
+									<DataPath>Объект.Участники.Сотрудник</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="УчастникиСотрудникКонтекстноеМеню" id="43"/>
+									<ExtendedTooltip name="УчастникиСотрудникРасширеннаяПодсказка" id="44"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.Обучения</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+</Form>

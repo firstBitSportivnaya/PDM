@@ -1,0 +1,313 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<UsualGroup name="ГруппаКодНаименование" id="87">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа код наименование</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа код наименование</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаКодНаименованиеРасширеннаяПодсказка" id="88"/>
+			<ChildItems>
+				<InputField name="Наименование" id="4">
+					<DataPath>Объект.Description</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+				</InputField>
+				<InputField name="Код" id="1">
+					<DataPath>Объект.Code</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаУровеньОпыт" id="89">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа уровень опыт</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа уровень опыт</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаУровеньОпытРасширеннаяПодсказка" id="90"/>
+			<ChildItems>
+				<InputField name="ДолжностьУровень" id="75">
+					<DataPath>Объект.Должность.Уровень</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ДолжностьУровеньКонтекстноеМеню" id="76"/>
+					<ExtendedTooltip name="ДолжностьУровеньРасширеннаяПодсказка" id="77"/>
+				</InputField>
+				<InputField name="ДолжностьТребуемыйОпыт" id="78">
+					<DataPath>Объект.Должность.ТребуемыйОпыт</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ДолжностьТребуемыйОпытКонтекстноеМеню" id="79"/>
+					<ExtendedTooltip name="ДолжностьТребуемыйОпытРасширеннаяПодсказка" id="80"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Должность" id="7">
+			<DataPath>Объект.Должность</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ДолжностьКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ДолжностьРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="ДолжностьСледующаяДолжность" id="81">
+			<DataPath>Объект.Должность.СледующаяДолжность</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ДолжностьСледующаяДолжностьКонтекстноеМеню" id="82"/>
+			<ExtendedTooltip name="ДолжностьСледующаяДолжностьРасширеннаяПодсказка" id="83"/>
+		</InputField>
+		<LabelField name="ДолжностьПрофессиональныйСтандарт" id="84">
+			<DataPath>Объект.Должность.ПрофессиональныйСтандарт</DataPath>
+			<Hiperlink>true</Hiperlink>
+			<ContextMenu name="ДолжностьПрофессиональныйСтандартКонтекстноеМеню" id="85"/>
+			<ExtendedTooltip name="ДолжностьПрофессиональныйСтандартРасширеннаяПодсказка" id="86"/>
+		</LabelField>
+		<Pages name="Страницы" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</Title>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="11"/>
+			<ChildItems>
+				<Page name="ГруппаТехническиеНавыки" id="12">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Технические навыки</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ГруппаТехническиеНавыкиРасширеннаяПодсказка" id="13"/>
+					<ChildItems>
+						<Table name="ТехническиеНавыки" id="14">
+							<Representation>Tree</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<InitialTreeView>ExpandAllLevels</InitialTreeView>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>ТехническиеНавыкиДерево</DataPath>
+							<ContextMenu name="ТехническиеНавыкиКонтекстноеМеню" id="15"/>
+							<AutoCommandBar name="ТехническиеНавыкиКоманднаяПанель" id="16"/>
+							<ExtendedTooltip name="ТехническиеНавыкиРасширеннаяПодсказка" id="17"/>
+							<SearchStringAddition name="ТехническиеНавыкиСтрокаПоиска" id="18">
+								<AdditionSource>
+									<Item>ТехническиеНавыки</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТехническиеНавыкиСтрокаПоискаКонтекстноеМеню" id="19"/>
+								<ExtendedTooltip name="ТехническиеНавыкиСтрокаПоискаРасширеннаяПодсказка" id="20"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ТехническиеНавыкиСостояниеПросмотра" id="21">
+								<AdditionSource>
+									<Item>ТехническиеНавыки</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТехническиеНавыкиСостояниеПросмотраКонтекстноеМеню" id="22"/>
+								<ExtendedTooltip name="ТехническиеНавыкиСостояниеПросмотраРасширеннаяПодсказка" id="23"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ТехническиеНавыкиУправлениеПоиском" id="24">
+								<AdditionSource>
+									<Item>ТехническиеНавыки</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ТехническиеНавыкиУправлениеПоискомКонтекстноеМеню" id="25"/>
+								<ExtendedTooltip name="ТехническиеНавыкиУправлениеПоискомРасширеннаяПодсказка" id="26"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="ТехническиеНавыкиНавык" id="91">
+									<DataPath>ТехническиеНавыкиДерево.Навык</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ТехническиеНавыкиНавыкКонтекстноеМеню" id="92"/>
+									<ExtendedTooltip name="ТехническиеНавыкиНавыкРасширеннаяПодсказка" id="93"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаЛичныеНавыки" id="33">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Личные навыки</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ГруппаЛичныеНавыкиРасширеннаяПодсказка" id="34"/>
+					<ChildItems>
+						<Table name="ЛичныеНавыки" id="35">
+							<Representation>Tree</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.ЛичныеНавыки</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ЛичныеНавыкиКонтекстноеМеню" id="36"/>
+							<AutoCommandBar name="ЛичныеНавыкиКоманднаяПанель" id="37"/>
+							<ExtendedTooltip name="ЛичныеНавыкиРасширеннаяПодсказка" id="38"/>
+							<SearchStringAddition name="ЛичныеНавыкиСтрокаПоиска" id="39">
+								<AdditionSource>
+									<Item>ЛичныеНавыки</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ЛичныеНавыкиСтрокаПоискаКонтекстноеМеню" id="40"/>
+								<ExtendedTooltip name="ЛичныеНавыкиСтрокаПоискаРасширеннаяПодсказка" id="41"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ЛичныеНавыкиСостояниеПросмотра" id="42">
+								<AdditionSource>
+									<Item>ЛичныеНавыки</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ЛичныеНавыкиСостояниеПросмотраКонтекстноеМеню" id="43"/>
+								<ExtendedTooltip name="ЛичныеНавыкиСостояниеПросмотраРасширеннаяПодсказка" id="44"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ЛичныеНавыкиУправлениеПоиском" id="45">
+								<AdditionSource>
+									<Item>ЛичныеНавыки</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ЛичныеНавыкиУправлениеПоискомКонтекстноеМеню" id="46"/>
+								<ExtendedTooltip name="ЛичныеНавыкиУправлениеПоискомРасширеннаяПодсказка" id="47"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ЛичныеНавыкиНомерСтроки" id="48">
+									<DataPath>Объект.ЛичныеНавыки.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ЛичныеНавыкиНомерСтрокиКонтекстноеМеню" id="49"/>
+									<ExtendedTooltip name="ЛичныеНавыкиНомерСтрокиРасширеннаяПодсказка" id="50"/>
+								</LabelField>
+								<InputField name="ЛичныеНавыкиНавык" id="51">
+									<DataPath>Объект.ЛичныеНавыки.Навык</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ЛичныеНавыкиНавыкКонтекстноеМеню" id="52"/>
+									<ExtendedTooltip name="ЛичныеНавыкиНавыкРасширеннаяПодсказка" id="53"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаФункциональныеОбязанности" id="54">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Функциональные обязанности</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ГруппаФункциональныеОбязанностиРасширеннаяПодсказка" id="55"/>
+					<ChildItems>
+						<Table name="ФункциональныеОбязанности" id="56">
+							<Representation>Tree</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.ФункциональныеОбязанности</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ФункциональныеОбязанностиКонтекстноеМеню" id="57"/>
+							<AutoCommandBar name="ФункциональныеОбязанностиКоманднаяПанель" id="58"/>
+							<ExtendedTooltip name="ФункциональныеОбязанностиРасширеннаяПодсказка" id="59"/>
+							<SearchStringAddition name="ФункциональныеОбязанностиСтрокаПоиска" id="60">
+								<AdditionSource>
+									<Item>ФункциональныеОбязанности</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ФункциональныеОбязанностиСтрокаПоискаКонтекстноеМеню" id="61"/>
+								<ExtendedTooltip name="ФункциональныеОбязанностиСтрокаПоискаРасширеннаяПодсказка" id="62"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ФункциональныеОбязанностиСостояниеПросмотра" id="63">
+								<AdditionSource>
+									<Item>ФункциональныеОбязанности</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ФункциональныеОбязанностиСостояниеПросмотраКонтекстноеМеню" id="64"/>
+								<ExtendedTooltip name="ФункциональныеОбязанностиСостояниеПросмотраРасширеннаяПодсказка" id="65"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ФункциональныеОбязанностиУправлениеПоиском" id="66">
+								<AdditionSource>
+									<Item>ФункциональныеОбязанности</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ФункциональныеОбязанностиУправлениеПоискомКонтекстноеМеню" id="67"/>
+								<ExtendedTooltip name="ФункциональныеОбязанностиУправлениеПоискомРасширеннаяПодсказка" id="68"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ФункциональныеОбязанностиНомерСтроки" id="69">
+									<DataPath>Объект.ФункциональныеОбязанности.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ФункциональныеОбязанностиНомерСтрокиКонтекстноеМеню" id="70"/>
+									<ExtendedTooltip name="ФункциональныеОбязанностиНомерСтрокиРасширеннаяПодсказка" id="71"/>
+								</LabelField>
+								<InputField name="ФункциональныеОбязанностиОбязанность" id="72">
+									<DataPath>Объект.ФункциональныеОбязанности.Обязанность</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ФункциональныеОбязанностиОбязанностьКонтекстноеМеню" id="73"/>
+									<ExtendedTooltip name="ФункциональныеОбязанностиОбязанностьРасширеннаяПодсказка" id="74"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.ПрофилиДолжностей</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ТехническиеНавыкиДерево" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Технические навыки дерево</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Навык" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Навык</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Компетенции</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+</Form>

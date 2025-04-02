@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ОбновитьКомандыБота" id="37">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ОбновитьКомандыБота</CommandName>
+				<ExtendedTooltip name="ОбновитьКомандыБотаРасширеннаяПодсказка" id="38"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="AfterWrite">ПослеЗаписи</Event>
+		<Event name="AfterWriteAtServer">ПослеЗаписиНаСервере</Event>
+		<Event name="OnReadAtServer">ПриЧтенииНаСервере</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeWrite">ПередЗаписью</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Код" id="1">
+			<DataPath>Объект.Code</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Наименование" id="4">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<Table name="Команды" id="10">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.Команды</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="КомандыКонтекстноеМеню" id="11"/>
+			<AutoCommandBar name="КомандыКоманднаяПанель" id="12">
+				<ChildItems>
+					<Button name="КомандыЗаполнитьКомандамиПоумолчанию" id="35">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ЗаполнитьКомандамиПоУмолчанию</CommandName>
+						<ExtendedTooltip name="КомандыЗаполнитьКомандамиПоумолчаниюРасширеннаяПодсказка" id="36"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="КомандыРасширеннаяПодсказка" id="13"/>
+			<SearchStringAddition name="КомандыСтрокаПоиска" id="14">
+				<AdditionSource>
+					<Item>Команды</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="КомандыСтрокаПоискаКонтекстноеМеню" id="15"/>
+				<ExtendedTooltip name="КомандыСтрокаПоискаРасширеннаяПодсказка" id="16"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="КомандыСостояниеПросмотра" id="17">
+				<AdditionSource>
+					<Item>Команды</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="КомандыСостояниеПросмотраКонтекстноеМеню" id="18"/>
+				<ExtendedTooltip name="КомандыСостояниеПросмотраРасширеннаяПодсказка" id="19"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="КомандыУправлениеПоиском" id="20">
+				<AdditionSource>
+					<Item>Команды</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="КомандыУправлениеПоискомКонтекстноеМеню" id="21"/>
+				<ExtendedTooltip name="КомандыУправлениеПоискомРасширеннаяПодсказка" id="22"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="КомандыНомерСтроки" id="23">
+					<DataPath>Объект.Команды.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КомандыНомерСтрокиКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="КомандыНомерСтрокиРасширеннаяПодсказка" id="25"/>
+				</LabelField>
+				<InputField name="КомандыИмяКоманды" id="26">
+					<DataPath>Объект.Команды.ИмяКоманды</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КомандыИмяКомандыКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="КомандыИмяКомандыРасширеннаяПодсказка" id="28"/>
+				</InputField>
+				<InputField name="КомандыОписание" id="29">
+					<DataPath>Объект.Команды.Описание</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КомандыОписаниеКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="КомандыОписаниеРасширеннаяПодсказка" id="31"/>
+				</InputField>
+				<CheckBoxField name="КомандыДоступнаВInlineMode" id="52">
+					<DataPath>Объект.Команды.ДоступнаВInlineMode</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="КомандыДоступнаВInlineModeКонтекстноеМеню" id="53"/>
+					<ExtendedTooltip name="КомандыДоступнаВInlineModeРасширеннаяПодсказка" id="54"/>
+				</CheckBoxField>
+				<InputField name="КомандыНастройкаОтправки" id="32">
+					<DataPath>Объект.Команды.АлгоритмОтвета</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КомандыНастройкаОтправкиКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="КомандыНастройкаОтправкиРасширеннаяПодсказка" id="34"/>
+				</InputField>
+				<InputField name="КомандыЗадание" id="49">
+					<DataPath>Объект.Команды.Задание</DataPath>
+					<ContextMenu name="КомандыЗаданиеКонтекстноеМеню" id="50"/>
+					<ExtendedTooltip name="КомандыЗаданиеРасширеннаяПодсказка" id="51"/>
+				</InputField>
+				<InputField name="КомандыВложенностьКнопок" id="46">
+					<DataPath>Объект.Команды.ВложенностьКнопок</DataPath>
+					<ContextMenu name="КомандыВложенностьКнопокКонтекстноеМеню" id="47"/>
+					<ExtendedTooltip name="КомандыВложенностьКнопокРасширеннаяПодсказка" id="48"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.КомандыБотов</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ЗаполнитьКомандамиПоУмолчанию" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить командами по умолчанию</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ЗаполнитьКомандамиПоУмолчанию</Action>
+		</Command>
+		<Command name="ОбновитьКомандыБота" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить команды бота</v8:content>
+				</v8:item>
+			</Title>
+			<Picture>
+				<xr:Ref>StdPicture.Refresh</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОбновитьКомандыБота</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+	</Commands>
+</Form>

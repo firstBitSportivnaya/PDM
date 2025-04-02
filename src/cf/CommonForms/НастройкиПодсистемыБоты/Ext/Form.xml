@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаАдресПеренаправленияВебХуков" id="235">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес перенаправления веб-хуков</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа адрес перенаправления веб хуков</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ГруппаАдресПеренаправленияВебХуковРасширеннаяПодсказка" id="236"/>
+			<ChildItems>
+				<InputField name="АдресПубликацииИнформационнойБазыДляБотов" id="7">
+					<DataPath>НаборКонстант.АдресПубликацииИнформационнойБазыДляБотов</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="АдресПубликацииИнформационнойБазыДляБотовКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="АдресПубликацииИнформационнойБазыДляБотовРасширеннаяПодсказка" id="9"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаОчисткаРегистраСообщенияПользователейБотов" id="217">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистка регистра сообщения пользователей ботов</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа очистка регистра сообщения пользователей ботов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<ExtendedTooltip name="ГруппаОчисткаРегистраСообщенияПользователейБотовРасширеннаяПодсказка" id="218"/>
+			<ChildItems>
+				<InputField name="КоличествоДнейХраненияСообщенийБотов" id="211">
+					<DataPath>НаборКонстант.КоличествоДнейХраненияСообщенийБотов</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КоличествоДнейХраненияСообщенийБотовКонтекстноеМеню" id="212"/>
+					<ExtendedTooltip name="КоличествоДнейХраненияСообщенийБотовРасширеннаяПодсказка" id="213"/>
+				</InputField>
+				<UsualGroup name="ГруппаРегламентноеЗаданиеСообщение" id="221">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Scheduled task</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Регламентное задание</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа регламентное задание сообщение</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаРегламентноеЗаданиеСообщениеРасширеннаяПодсказка" id="222"/>
+					<ChildItems>
+						<CheckBoxField name="ИспользоватьРегламентноеЗаданиеСообщение" id="223">
+							<DataPath>ИспользоватьРегламентноеЗаданиеСообщения</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ИспользоватьРегламентноеЗаданиеСообщениеКонтекстноеМеню" id="224"/>
+							<ExtendedTooltip name="ИспользоватьРегламентноеЗаданиеСообщениеРасширеннаяПодсказка" id="225"/>
+							<Events>
+								<Event name="OnChange">ИспользоватьРегламентноеЗаданиеСообщениеПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+						<Button name="НастроитьРасписаниеРегламентногоЗаданияСообщение" id="226">
+							<Type>Hyperlink</Type>
+							<CommandName>Form.Command.НастроитьРасписаниеРегламентногоЗаданияСообщения</CommandName>
+							<ExtendedTooltip name="НастроитьРасписаниеРегламентногоЗаданияСообщениеРасширеннаяПодсказка" id="227"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаОчисткаРегистраВыполненияЗаданийБотов" id="219">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистка регистра выполнение заданий ботов</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа очистка регистра сообщения пользователей ботов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<ExtendedTooltip name="ГруппаОчисткаРегистраВыполненияЗаданийБотовРасширеннаяПодсказка" id="220"/>
+			<ChildItems>
+				<InputField name="КоличествоДнейХраненияВыполненияЗаданийБотов" id="214">
+					<DataPath>НаборКонстант.КоличествоДнейХраненияВыполненияЗаданийБотов</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КоличествоДнейХраненияВыполненияЗаданийБотовКонтекстноеМеню" id="215"/>
+					<ExtendedTooltip name="КоличествоДнейХраненияВыполненияЗаданийБотовРасширеннаяПодсказка" id="216"/>
+				</InputField>
+				<UsualGroup name="ГруппаРегламентноеЗаданиеЗадания" id="228">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Scheduled task</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Регламентное задание</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа регламентное задание сообщение</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаРегламентноеЗаданиеЗаданияРасширеннаяПодсказка" id="229"/>
+					<ChildItems>
+						<CheckBoxField name="ИспользоватьРегламентноеЗаданиеЗадания" id="230">
+							<DataPath>ИспользоватьРегламентноеЗаданиеЗадания</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ИспользоватьРегламентноеЗаданиеЗаданияКонтекстноеМеню" id="231"/>
+							<ExtendedTooltip name="ИспользоватьРегламентноеЗаданиеЗаданияРасширеннаяПодсказка" id="232"/>
+							<Events>
+								<Event name="OnChange">ИспользоватьРегламентноеЗаданиеЗаданияПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+						<Button name="НастроитьРасписаниеРегламентногоЗаданияЗадания" id="233">
+							<Type>Hyperlink</Type>
+							<CommandName>Form.Command.НастроитьРасписаниеРегламентногоЗаданияЗадания</CommandName>
+							<ExtendedTooltip name="НастроитьРасписаниеРегламентногоЗаданияЗаданияРасширеннаяПодсказка" id="234"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаСопоставлениеМетодовБотов" id="237">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сопоставление методов ботов</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа сопоставление методов ботов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ГруппаСопоставлениеМетодовБотовРасширеннаяПодсказка" id="238"/>
+			<ChildItems>
+				<Button name="СопоставлениеМетодовБотов" id="239">
+					<Type>Hyperlink</Type>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<CommandName>Form.Command.СопоставлениеМетодовБотов</CommandName>
+					<ExtendedTooltip name="СопоставлениеМетодовБотовРасширеннаяПодсказка" id="240"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаСоответствиеПользователейЧатамБотов" id="241">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Соответствия пользователей чатам ботов</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа соответствие пользователей чатам ботов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ГруппаСоответствиеПользователейЧатамБотовРасширеннаяПодсказка" id="242"/>
+			<ChildItems>
+				<Button name="СоответствиеПользователейЧатамБотов" id="243">
+					<Type>Hyperlink</Type>
+					<CommandName>Form.Command.СоответствиеПользователейЧатамБотов</CommandName>
+					<ExtendedTooltip name="СоответствиеПользователейЧатамБотовРасширеннаяПодсказка" id="244"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="НаборКонстант" id="1">
+			<Type>
+				<v8:Type>cfg:ConstantsSet</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ИспользоватьРегламентноеЗаданиеСообщения" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Автоматически по расписанию:</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="РасписаниеРегламентногоЗаданияСообщения" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Расписание регламентного задания</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="ИспользоватьРегламентноеЗаданиеЗадания" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Автоматически по расписанию:</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="РасписаниеРегламентногоЗаданияЗадания" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Расписание регламентного задания</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="НастроитьРасписаниеРегламентногоЗаданияСообщения" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Set up scheduled task schedule</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Расписание очистки сообщений</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настроить расписание регламентного задания сообщения</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.ScheduledJob</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>НастроитьРасписаниеРегламентногоЗаданияСообщения</Action>
+		</Command>
+		<Command name="НастроитьРасписаниеРегламентногоЗаданияЗадания" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Set up scheduled task schedule</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Расписание очистки выполнений заданий</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настроить расписание регламентного задания сообщения</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.ScheduledJob</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>НастроитьРасписаниеРегламентногоЗаданияЗадания</Action>
+		</Command>
+		<Command name="СопоставлениеМетодовБотов" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть регистр соответствия типов сообщений ботов и методов интеграции</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сопоставление методов ботов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СопоставлениеМетодовБотов</Action>
+		</Command>
+		<Command name="СоответствиеПользователейЧатамБотов" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть регистр соответствий пользователей систем</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сопоставление методов ботов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоответствиеПользователейЧатамБотов</Action>
+		</Command>
+	</Commands>
+</Form>

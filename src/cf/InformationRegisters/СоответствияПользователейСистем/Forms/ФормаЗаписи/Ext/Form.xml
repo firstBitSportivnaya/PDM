@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="НастройкаИнтеграции" id="1">
+			<DataPath>Запись.НастройкаИнтеграции</DataPath>
+			<ContextMenu name="НастройкаИнтеграцииКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НастройкаИнтеграцииРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="ТипИдентификации" id="4">
+			<DataPath>Запись.ТипИдентификации</DataPath>
+			<ContextMenu name="ТипИдентификацииКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ТипИдентификацииРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<UsualGroup name="ГруппаПредупреждение" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Warning group</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа предупреждение</v8:content>
+				</v8:item>
+			</Title>
+			<HorizontalStretch>true</HorizontalStretch>
+			<HorizontalAlign>Left</HorizontalAlign>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<BackColor>style:ЦветДополнительнойНавигацииСветлоСиний</BackColor>
+			<ExtendedTooltip name="ГруппаПредупреждениеРасширеннаяПодсказка" id="14"/>
+			<ChildItems>
+				<PictureDecoration name="Декорация1" id="15">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Декорация1</v8:content>
+						</v8:item>
+					</Title>
+					<GroupVerticalAlign>Center</GroupVerticalAlign>
+					<Picture>
+						<xr:Ref>CommonPicture.Предупреждение</xr:Ref>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</Picture>
+					<ContextMenu name="Декорация1КонтекстноеМеню" id="16"/>
+					<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="17"/>
+				</PictureDecoration>
+				<LabelDecoration name="Декорация2" id="18">
+					<HorizontalStretch>true</HorizontalStretch>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Значение идентификации сторонней системы должно полностью соответствовать ожидаемому значению, вплоть до регистра букв </v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="Декорация2КонтекстноеМеню" id="19"/>
+					<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="20"/>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="ЗначениеСистемы" id="7">
+			<DataPath>Запись.ЗначениеСистемы</DataPath>
+			<ContextMenu name="ЗначениеСистемыКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ЗначениеСистемыРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="Пользователь" id="10">
+			<DataPath>Запись.Пользователь</DataPath>
+			<ContextMenu name="ПользовательКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ПользовательРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<CheckBoxField name="Зарегистрирован" id="21">
+			<DataPath>Запись.Зарегистрирован</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ЗарегистрированКонтекстноеМеню" id="22"/>
+			<ExtendedTooltip name="ЗарегистрированРасширеннаяПодсказка" id="23"/>
+		</CheckBoxField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.СоответствияПользователейСистем</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

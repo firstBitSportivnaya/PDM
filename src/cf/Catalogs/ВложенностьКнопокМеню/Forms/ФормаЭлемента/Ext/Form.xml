@@ -1,0 +1,362 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="AfterWrite">ПослеЗаписи</Event>
+		<Event name="AfterWriteAtServer">ПослеЗаписиНаСервере</Event>
+		<Event name="OnReadAtServer">ПриЧтенииНаСервере</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeWrite">ПередЗаписью</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Код" id="1">
+			<DataPath>Объект.Code</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Наименование" id="4">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="Владелец" id="7">
+			<DataPath>Объект.Owner</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ВладелецКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ВладелецРасширеннаяПодсказка" id="9"/>
+			<Events>
+				<Event name="OnChange">ВладелецПриИзменении</Event>
+			</Events>
+		</InputField>
+		<InputField name="Родитель" id="10">
+			<DataPath>Объект.Parent</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="РодительКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="РодительРасширеннаяПодсказка" id="12"/>
+			<Events>
+				<Event name="OnChange">РодительПриИзменении</Event>
+			</Events>
+		</InputField>
+		<InputField name="ТекстКнопки" id="13">
+			<DataPath>Объект.ТекстКнопки</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ТекстКнопкиКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ТекстКнопкиРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<RadioButtonField name="КнопкаВызываетЗадание" id="59">
+			<DataPath>Объект.КнопкаВызываетЗадание</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кнопка вызывает</v8:content>
+				</v8:item>
+			</Title>
+			<RadioButtonType>Auto</RadioButtonType>
+			<ChoiceList>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Меню</v8:content>
+							</v8:item>
+						</Presentation>
+						<Value xsi:type="xs:decimal">0</Value>
+					</xr:Value>
+				</xr:Item>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Задание</v8:content>
+							</v8:item>
+						</Presentation>
+						<Value xsi:type="xs:decimal">1</Value>
+					</xr:Value>
+				</xr:Item>
+			</ChoiceList>
+			<ContextMenu name="КнопкаВызываетЗаданиеКонтекстноеМеню" id="60"/>
+			<ExtendedTooltip name="КнопкаВызываетЗаданиеРасширеннаяПодсказка" id="61"/>
+			<Events>
+				<Event name="OnChange">КнопкаВызываетЗаданиеПриИзменении</Event>
+			</Events>
+		</RadioButtonField>
+		<InputField name="Задание" id="56">
+			<DataPath>Объект.Задание</DataPath>
+			<ContextMenu name="ЗаданиеКонтекстноеМеню" id="57"/>
+			<ExtendedTooltip name="ЗаданиеРасширеннаяПодсказка" id="58"/>
+		</InputField>
+		<InputField name="АлгоритмОбработки" id="53">
+			<DataPath>Объект.АлгоритмОбработки</DataPath>
+			<ContextMenu name="АлгоритмОбработкиКонтекстноеМеню" id="54"/>
+			<ExtendedTooltip name="АлгоритмОбработкиРасширеннаяПодсказка" id="55"/>
+		</InputField>
+		<Pages name="ГруппаСтраницы" id="62">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="ГруппаСтраницыРасширеннаяПодсказка" id="63"/>
+			<ChildItems>
+				<Page name="ГруппаНастройкаДоступности" id="64">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройка доступности</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа настройка доступности</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаНастройкаДоступностиРасширеннаяПодсказка" id="65"/>
+					<ChildItems>
+						<Table name="ДоступностьКнопки" id="84">
+							<TitleLocation>Top</TitleLocation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.ДоступностьКнопки</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Доступна следующим пользователям / профилям групп доступа / группам доступа /
+группам пользователей (по умолчанию доступна всем)</v8:content>
+								</v8:item>
+							</Title>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ДоступностьКнопкиКонтекстноеМеню" id="85"/>
+							<AutoCommandBar name="ДоступностьКнопкиКоманднаяПанель" id="86"/>
+							<ExtendedTooltip name="ДоступностьКнопкиРасширеннаяПодсказка" id="87"/>
+							<SearchStringAddition name="ДоступностьКнопкиСтрокаПоиска" id="88">
+								<AdditionSource>
+									<Item>ДоступностьКнопки</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ДоступностьКнопкиСтрокаПоискаКонтекстноеМеню" id="89"/>
+								<ExtendedTooltip name="ДоступностьКнопкиСтрокаПоискаРасширеннаяПодсказка" id="90"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ДоступностьКнопкиСостояниеПросмотра" id="91">
+								<AdditionSource>
+									<Item>ДоступностьКнопки</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ДоступностьКнопкиСостояниеПросмотраКонтекстноеМеню" id="92"/>
+								<ExtendedTooltip name="ДоступностьКнопкиСостояниеПросмотраРасширеннаяПодсказка" id="93"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ДоступностьКнопкиУправлениеПоиском" id="94">
+								<AdditionSource>
+									<Item>ДоступностьКнопки</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ДоступностьКнопкиУправлениеПоискомКонтекстноеМеню" id="95"/>
+								<ExtendedTooltip name="ДоступностьКнопкиУправлениеПоискомРасширеннаяПодсказка" id="96"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ДоступностьКнопкиНомерСтроки" id="97">
+									<DataPath>Объект.ДоступностьКнопки.LineNumber</DataPath>
+									<Visible>false</Visible>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДоступностьКнопкиНомерСтрокиКонтекстноеМеню" id="98"/>
+									<ExtendedTooltip name="ДоступностьКнопкиНомерСтрокиРасширеннаяПодсказка" id="99"/>
+								</LabelField>
+								<InputField name="ДоступностьКнопкиДоступна" id="100">
+									<DataPath>Объект.ДоступностьКнопки.Доступна</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДоступностьКнопкиДоступнаКонтекстноеМеню" id="101"/>
+									<ExtendedTooltip name="ДоступностьКнопкиДоступнаРасширеннаяПодсказка" id="102"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаДополнительно" id="82">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дополнительно</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа дополнительно</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаДополнительноРасширеннаяПодсказка" id="83"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаРаботаетВРежимеКлавиатуры" id="31">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Работает только в режиме клавиатуры</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<ExtendedTooltip name="ГруппаРаботаетВРежимеКлавиатурыРасширеннаяПодсказка" id="32"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаРаботаетВРежимеКлавиатурыГоризонтальная" id="33">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа работает в режиме клавиатуры горизонтальная</v8:content>
+										</v8:item>
+									</Title>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаРаботаетВРежимеКлавиатурыГоризонтальнаяРасширеннаяПодсказка" id="34"/>
+									<ChildItems>
+										<CheckBoxField name="НеобходимКонтакт" id="16">
+											<DataPath>Объект.НеобходимКонтакт</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="НеобходимКонтактКонтекстноеМеню" id="17"/>
+											<ExtendedTooltip name="НеобходимКонтактРасширеннаяПодсказка" id="18"/>
+										</CheckBoxField>
+										<CheckBoxField name="НеобходимаЛокация" id="19">
+											<DataPath>Объект.НеобходимаЛокация</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="НеобходимаЛокацияКонтекстноеМеню" id="20"/>
+											<ExtendedTooltip name="НеобходимаЛокацияРасширеннаяПодсказка" id="21"/>
+										</CheckBoxField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаРаботаетВРежимеКлавиатурыГоризонтальнаяОпрос" id="48">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа работает в режиме клавиатуры горизонтальная опрос</v8:content>
+										</v8:item>
+									</Title>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаРаботаетВРежимеКлавиатурыГоризонтальнаяОпросРасширеннаяПодсказка" id="49"/>
+									<ChildItems>
+										<CheckBoxField name="НеобходимОпрос" id="22">
+											<DataPath>Объект.НеобходимОпрос</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="НеобходимОпросКонтекстноеМеню" id="23"/>
+											<ExtendedTooltip name="НеобходимОпросРасширеннаяПодсказка" id="24"/>
+											<Events>
+												<Event name="OnChange">НеобходимОпросПриИзменении</Event>
+											</Events>
+										</CheckBoxField>
+										<InputField name="ТипОпроса" id="50">
+											<DataPath>Объект.ТипОпроса</DataPath>
+											<ListChoiceMode>true</ListChoiceMode>
+											<ChoiceList>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>en</v8:lang>
+																<v8:content>Quiz</v8:content>
+															</v8:item>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Викторина</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">quiz</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Обычный</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">regular</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Любой</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">all</Value>
+													</xr:Value>
+												</xr:Item>
+											</ChoiceList>
+											<ContextMenu name="ТипОпросаКонтекстноеМеню" id="51"/>
+											<ExtendedTooltip name="ТипОпросаРасширеннаяПодсказка" id="52"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаРаботаетВInlineМод" id="35">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Работает только в inline-моде</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<ExtendedTooltip name="ГруппаРаботаетВInlineМодРасширеннаяПодсказка" id="36"/>
+							<ChildItems>
+								<InputField name="URLПеренаправления" id="25">
+									<DataPath>Объект.URLПеренаправления</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="URLПеренаправленияКонтекстноеМеню" id="26"/>
+									<ExtendedTooltip name="URLПеренаправленияРасширеннаяПодсказка" id="27"/>
+								</InputField>
+								<InputField name="ДанныеВозврата" id="28">
+									<DataPath>Объект.ДанныеВозврата</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MultiLine>true</MultiLine>
+									<ContextMenu name="ДанныеВозвратаКонтекстноеМеню" id="29"/>
+									<ExtendedTooltip name="ДанныеВозвратаРасширеннаяПодсказка" id="30"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.ВложенностьКнопокМеню</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

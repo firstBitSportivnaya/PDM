@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="AfterWrite">ПослеЗаписи</Event>
+		<Event name="AfterWriteAtServer">ПослеЗаписиНаСервере</Event>
+		<Event name="OnReadAtServer">ПриЧтенииНаСервере</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeWrite">ПередЗаписью</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Код" id="1">
+			<DataPath>Объект.Code</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Наименование" id="4">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="Родитель" id="10">
+			<DataPath>Объект.Parent</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="РодительКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="РодительРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<Table name="Шаги" id="13">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.Шаги</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ШагиКонтекстноеМеню" id="14"/>
+			<AutoCommandBar name="ШагиКоманднаяПанель" id="15"/>
+			<ExtendedTooltip name="ШагиРасширеннаяПодсказка" id="16"/>
+			<SearchStringAddition name="ШагиСтрокаПоиска" id="17">
+				<AdditionSource>
+					<Item>Шаги</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ШагиСтрокаПоискаКонтекстноеМеню" id="18"/>
+				<ExtendedTooltip name="ШагиСтрокаПоискаРасширеннаяПодсказка" id="19"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ШагиСостояниеПросмотра" id="20">
+				<AdditionSource>
+					<Item>Шаги</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ШагиСостояниеПросмотраКонтекстноеМеню" id="21"/>
+				<ExtendedTooltip name="ШагиСостояниеПросмотраРасширеннаяПодсказка" id="22"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ШагиУправлениеПоиском" id="23">
+				<AdditionSource>
+					<Item>Шаги</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ШагиУправлениеПоискомКонтекстноеМеню" id="24"/>
+				<ExtendedTooltip name="ШагиУправлениеПоискомРасширеннаяПодсказка" id="25"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ШагиНомерСтроки" id="26">
+					<DataPath>Объект.Шаги.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ШагиНомерСтрокиКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="ШагиНомерСтрокиРасширеннаяПодсказка" id="28"/>
+				</LabelField>
+				<InputField name="ШагиАлгоритмОтправки" id="29">
+					<DataPath>Объект.Шаги.АлгоритмОтправки</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ШагиАлгоритмОтправкиКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="ШагиАлгоритмОтправкиРасширеннаяПодсказка" id="31"/>
+				</InputField>
+				<CheckBoxField name="ШагиНеОжидаетОтветаПользователя" id="41">
+					<DataPath>Объект.Шаги.НеОжидаетОтветаПользователя</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ШагиНеОжидаетОтветаПользователяКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="ШагиНеОжидаетОтветаПользователяРасширеннаяПодсказка" id="43"/>
+				</CheckBoxField>
+				<InputField name="ШагиВложенностьКнопок" id="35">
+					<DataPath>Объект.Шаги.ВложенностьКнопок</DataPath>
+					<ContextMenu name="ШагиВложенностьКнопокКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="ШагиВложенностьКнопокРасширеннаяПодсказка" id="37"/>
+				</InputField>
+				<InputField name="ШагиКонтрольОжидаемогоОтвета" id="32">
+					<DataPath>Объект.Шаги.КонтрольОжидаемогоОтвета</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ШагиКонтрольОжидаемогоОтветаКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="ШагиКонтрольОжидаемогоОтветаРасширеннаяПодсказка" id="34"/>
+				</InputField>
+				<InputField name="ШагиАлгоритмКонвертацииОтвета" id="38">
+					<DataPath>Объект.Шаги.АлгоритмКонвертацииОтвета</DataPath>
+					<ContextMenu name="ШагиАлгоритмКонвертацииОтветаКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="ШагиАлгоритмКонвертацииОтветаРасширеннаяПодсказка" id="40"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.ШагиВыполненияЗаданий</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

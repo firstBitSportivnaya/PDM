@@ -25,6 +25,7 @@ Employee = person "Сотрудник"
         Cat_TaskStatuses = component "Виды статусов задач" "" "Справочник" "Справочники"
         InfoReg_TaskStatuses = component "Статусы задач" "" "Регистр сведений" "Регистры сведений"
         InfoReg_TimeSheet = component "Учет рабочего времени" "" "Регистр сведений" "Регистры сведений"
+        InfoReg_UserMatching = component "Соответствие пользователей" "" "Регистр сведений" "Регистры сведений"
     }
     SubsysEmployeeCompetencies = container "Учет компетенций и оценка сотрудников" "" "Подсистема" "Подсистемы" {
         Cat_ReviewTypes = component "Виды оценки сотрудников" "" "Справочник" "Справочники"

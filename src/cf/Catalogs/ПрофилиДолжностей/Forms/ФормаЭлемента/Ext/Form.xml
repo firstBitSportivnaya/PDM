@@ -3,6 +3,10 @@
 	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
 	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="AfterWriteAtServer">ПослеЗаписиНаСервере</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
 	<ChildItems>
 		<UsualGroup name="ГруппаКодНаименование" id="87">
 			<Title>
@@ -106,47 +110,61 @@
 					</Title>
 					<ExtendedTooltip name="ГруппаТехническиеНавыкиРасширеннаяПодсказка" id="13"/>
 					<ChildItems>
-						<Table name="ТехническиеНавыки" id="14">
+						<Table name="ТехническиеНавыки" id="98">
 							<Representation>Tree</Representation>
-							<AutoInsertNewRow>true</AutoInsertNewRow>
-							<InitialTreeView>ExpandAllLevels</InitialTreeView>
 							<EnableStartDrag>true</EnableStartDrag>
 							<EnableDrag>true</EnableDrag>
 							<DataPath>ТехническиеНавыкиДерево</DataPath>
-							<ContextMenu name="ТехническиеНавыкиКонтекстноеМеню" id="15"/>
-							<AutoCommandBar name="ТехническиеНавыкиКоманднаяПанель" id="16"/>
-							<ExtendedTooltip name="ТехническиеНавыкиРасширеннаяПодсказка" id="17"/>
-							<SearchStringAddition name="ТехническиеНавыкиСтрокаПоиска" id="18">
+							<ContextMenu name="ТехническиеНавыкиКонтекстноеМеню" id="99"/>
+							<AutoCommandBar name="ТехническиеНавыкиКоманднаяПанель" id="100">
+								<ChildItems>
+									<Button name="ТехническиеНавыкиПодборКомпетенцийТехнические" id="117">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ПодборКомпетенцийТехнические</CommandName>
+										<ExtendedTooltip name="ТехническиеНавыкиПодборКомпетенцийТехническиеРасширеннаяПодсказка" id="118"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ТехническиеНавыкиРасширеннаяПодсказка" id="101"/>
+							<SearchStringAddition name="ТехническиеНавыкиСтрокаПоиска" id="102">
 								<AdditionSource>
 									<Item>ТехническиеНавыки</Item>
 									<Type>SearchStringRepresentation</Type>
 								</AdditionSource>
-								<ContextMenu name="ТехническиеНавыкиСтрокаПоискаКонтекстноеМеню" id="19"/>
-								<ExtendedTooltip name="ТехническиеНавыкиСтрокаПоискаРасширеннаяПодсказка" id="20"/>
+								<ContextMenu name="ТехническиеНавыкиСтрокаПоискаКонтекстноеМеню" id="103"/>
+								<ExtendedTooltip name="ТехническиеНавыкиСтрокаПоискаРасширеннаяПодсказка" id="104"/>
 							</SearchStringAddition>
-							<ViewStatusAddition name="ТехническиеНавыкиСостояниеПросмотра" id="21">
+							<ViewStatusAddition name="ТехническиеНавыкиСостояниеПросмотра" id="105">
 								<AdditionSource>
 									<Item>ТехническиеНавыки</Item>
 									<Type>ViewStatusRepresentation</Type>
 								</AdditionSource>
-								<ContextMenu name="ТехническиеНавыкиСостояниеПросмотраКонтекстноеМеню" id="22"/>
-								<ExtendedTooltip name="ТехническиеНавыкиСостояниеПросмотраРасширеннаяПодсказка" id="23"/>
+								<ContextMenu name="ТехническиеНавыкиСостояниеПросмотраКонтекстноеМеню" id="106"/>
+								<ExtendedTooltip name="ТехническиеНавыкиСостояниеПросмотраРасширеннаяПодсказка" id="107"/>
 							</ViewStatusAddition>
-							<SearchControlAddition name="ТехническиеНавыкиУправлениеПоиском" id="24">
+							<SearchControlAddition name="ТехническиеНавыкиУправлениеПоиском" id="108">
 								<AdditionSource>
 									<Item>ТехническиеНавыки</Item>
 									<Type>SearchControl</Type>
 								</AdditionSource>
-								<ContextMenu name="ТехническиеНавыкиУправлениеПоискомКонтекстноеМеню" id="25"/>
-								<ExtendedTooltip name="ТехническиеНавыкиУправлениеПоискомРасширеннаяПодсказка" id="26"/>
+								<ContextMenu name="ТехническиеНавыкиУправлениеПоискомКонтекстноеМеню" id="109"/>
+								<ExtendedTooltip name="ТехническиеНавыкиУправлениеПоискомРасширеннаяПодсказка" id="110"/>
 							</SearchControlAddition>
 							<ChildItems>
-								<InputField name="ТехническиеНавыкиНавык" id="91">
+								<InputField name="ТехническиеНавыкиРодитель" id="119">
+									<DataPath>ТехническиеНавыкиДерево.РодительЭлемента</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>1</Width>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ТехническиеНавыкиРодительКонтекстноеМеню" id="120"/>
+									<ExtendedTooltip name="ТехническиеНавыкиРодительРасширеннаяПодсказка" id="121"/>
+								</InputField>
+								<InputField name="ТехническиеНавыкиНавык" id="111">
 									<DataPath>ТехническиеНавыкиДерево.Навык</DataPath>
 									<EditMode>EnterOnInput</EditMode>
 									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-									<ContextMenu name="ТехническиеНавыкиНавыкКонтекстноеМеню" id="92"/>
-									<ExtendedTooltip name="ТехническиеНавыкиНавыкРасширеннаяПодсказка" id="93"/>
+									<ContextMenu name="ТехническиеНавыкиНавыкКонтекстноеМеню" id="112"/>
+									<ExtendedTooltip name="ТехническиеНавыкиНавыкРасширеннаяПодсказка" id="113"/>
 								</InputField>
 							</ChildItems>
 						</Table>
@@ -169,7 +187,15 @@
 							<DataPath>Объект.ЛичныеНавыки</DataPath>
 							<RowFilter xsi:nil="true"/>
 							<ContextMenu name="ЛичныеНавыкиКонтекстноеМеню" id="36"/>
-							<AutoCommandBar name="ЛичныеНавыкиКоманднаяПанель" id="37"/>
+							<AutoCommandBar name="ЛичныеНавыкиКоманднаяПанель" id="37">
+								<ChildItems>
+									<Button name="ЛичныеНавыкиПодборКомпетенцийЛичные" id="94">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ПодборКомпетенцийЛичные</CommandName>
+										<ExtendedTooltip name="ЛичныеНавыкиПодборКомпетенцийЛичныеРасширеннаяПодсказка" id="95"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
 							<ExtendedTooltip name="ЛичныеНавыкиРасширеннаяПодсказка" id="38"/>
 							<SearchStringAddition name="ЛичныеНавыкиСтрокаПоиска" id="39">
 								<AdditionSource>
@@ -230,7 +256,15 @@
 							<DataPath>Объект.ФункциональныеОбязанности</DataPath>
 							<RowFilter xsi:nil="true"/>
 							<ContextMenu name="ФункциональныеОбязанностиКонтекстноеМеню" id="57"/>
-							<AutoCommandBar name="ФункциональныеОбязанностиКоманднаяПанель" id="58"/>
+							<AutoCommandBar name="ФункциональныеОбязанностиКоманднаяПанель" id="58">
+								<ChildItems>
+									<Button name="ФункциональныеОбязанностиПодборКомпетенцийФункциональные" id="96">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ПодборКомпетенцийФункциональные</CommandName>
+										<ExtendedTooltip name="ФункциональныеОбязанностиПодборКомпетенцийФункциональныеРасширеннаяПодсказка" id="97"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
 							<ExtendedTooltip name="ФункциональныеОбязанностиРасширеннаяПодсказка" id="59"/>
 							<SearchStringAddition name="ФункциональныеОбязанностиСтрокаПоиска" id="60">
 								<AdditionSource>
@@ -307,7 +341,65 @@
 						<v8:Type>cfg:CatalogRef.Компетенции</v8:Type>
 					</Type>
 				</Column>
+				<Column name="РодительЭлемента" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Родитель</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Компетенции</v8:Type>
+					</Type>
+				</Column>
 			</Columns>
 		</Attribute>
 	</Attributes>
+	<Commands>
+		<Command name="ПодборКомпетенцийЛичные" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подбор компетенций</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подбор компетенций личные</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПодборКомпетенций</Action>
+		</Command>
+		<Command name="ПодборКомпетенцийФункциональные" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подбор компетенций</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подбор компетенций функциональные</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПодборКомпетенцийФункциональные</Action>
+		</Command>
+		<Command name="ПодборКомпетенцийТехнические" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подбор компетенций</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подбор компетенций технические</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПодборКомпетенцийТехнические</Action>
+		</Command>
+	</Commands>
 </Form>

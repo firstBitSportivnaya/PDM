@@ -1650,6 +1650,7 @@
 			<Document>Обучения</Document>
 			<Document>ОценкаСотрудников</Document>
 			<Document>РегистрацияРабочегоВремени</Document>
+			<Document>ПланированиеОтпуска</Document>
 			<Enum>ВариантыАвторизацииБота</Enum>
 			<Enum>ВариантыОчисткиФайлов</Enum>
 			<Enum>ВариантыПериода</Enum>
@@ -1731,6 +1732,7 @@
 			<Report>ПрогрессОтложенногоОбновления</Report>
 			<Report>СведенияОПользователях</Report>
 			<Report>УниверсальныйОтчет</Report>
+			<Report>ГрафикОтпусков</Report>
 			<DataProcessor>АвтоматическоеИзвлечениеТекстов</DataProcessor>
 			<DataProcessor>АктивныеПользователи</DataProcessor>
 			<DataProcessor>БлокировкаРаботыПользователей</DataProcessor>
@@ -1869,6 +1871,7 @@
 			<InformationRegister>УдаляемыеОбъекты</InformationRegister>
 			<InformationRegister>УчастникиВидеоЧатов</InformationRegister>
 			<InformationRegister>ФайлыВРабочемКаталоге</InformationRegister>
+			<InformationRegister>ОтпускаСотрудников</InformationRegister>
 			<AccumulationRegister>УчетВремениПоКомпетенциям</AccumulationRegister>
 			<AccumulationRegister>УчетРабочегоВремени</AccumulationRegister>
 			<ChartOfCharacteristicTypes>ДополнительныеРеквизитыИСведения</ChartOfCharacteristicTypes>

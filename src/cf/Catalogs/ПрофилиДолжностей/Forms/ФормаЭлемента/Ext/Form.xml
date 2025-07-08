@@ -4,8 +4,8 @@
 	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<Events>
-		<Event name="AfterWriteAtServer">ПослеЗаписиНаСервере</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
 	</Events>
 	<ChildItems>
 		<UsualGroup name="ГруппаКодНаименование" id="87">
@@ -151,14 +151,6 @@
 								<ExtendedTooltip name="ТехническиеНавыкиУправлениеПоискомРасширеннаяПодсказка" id="110"/>
 							</SearchControlAddition>
 							<ChildItems>
-								<InputField name="ТехническиеНавыкиРодитель" id="119">
-									<DataPath>ТехническиеНавыкиДерево.РодительЭлемента</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<Width>1</Width>
-									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-									<ContextMenu name="ТехническиеНавыкиРодительКонтекстноеМеню" id="120"/>
-									<ExtendedTooltip name="ТехническиеНавыкиРодительРасширеннаяПодсказка" id="121"/>
-								</InputField>
 								<InputField name="ТехническиеНавыкиНавык" id="111">
 									<DataPath>ТехническиеНавыкиДерево.Навык</DataPath>
 									<EditMode>EnterOnInput</EditMode>
@@ -335,17 +327,6 @@
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Навык</v8:content>
-						</v8:item>
-					</Title>
-					<Type>
-						<v8:Type>cfg:CatalogRef.Компетенции</v8:Type>
-					</Type>
-				</Column>
-				<Column name="РодительЭлемента" id="2">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Родитель</v8:content>
 						</v8:item>
 					</Title>
 					<Type>

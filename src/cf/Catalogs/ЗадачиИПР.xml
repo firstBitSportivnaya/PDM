@@ -63,7 +63,7 @@
 			<DefaultObjectForm>Catalog.ЗадачиИПР.Form.ФормаЭлемента</DefaultObjectForm>
 			<DefaultFolderForm/>
 			<DefaultListForm/>
-			<DefaultChoiceForm>Catalog.ЗадачиИПР.Form.ФормаВыбора</DefaultChoiceForm>
+			<DefaultChoiceForm>Catalog.ЗадачиИПР.Form.ФормаВыбораТиповая</DefaultChoiceForm>
 			<DefaultFolderChoiceForm/>
 			<AuxiliaryObjectForm/>
 			<AuxiliaryFolderForm/>
@@ -257,7 +257,8 @@
 				</Properties>
 			</Attribute>
 			<Form>ФормаЭлемента</Form>
-			<Form>ФормаВыбора</Form>
+			<Form>ФормаВыбораСКорзиной</Form>
+			<Form>ФормаВыбораТиповая</Form>
 		</ChildObjects>
 	</Catalog>
 </MetaDataObject>

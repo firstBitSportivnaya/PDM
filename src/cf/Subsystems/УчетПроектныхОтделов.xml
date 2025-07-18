@@ -66,6 +66,9 @@
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.Наставники</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Города</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.Образование</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПланированиеОтпуска</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ГрафикОтпусков</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ОтпускаСотрудников</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

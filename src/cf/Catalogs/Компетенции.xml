@@ -37,8 +37,8 @@
 			</Synonym>
 			<Comment/>
 			<Hierarchical>true</Hierarchical>
-			<HierarchyType>HierarchyOfItems</HierarchyType>
-			<LimitLevelCount>false</LimitLevelCount>
+			<HierarchyType>HierarchyFoldersAndItems</HierarchyType>
+			<LimitLevelCount>true</LimitLevelCount>
 			<LevelCount>2</LevelCount>
 			<FoldersOnTop>true</FoldersOnTop>
 			<UseStandardCommands>true</UseStandardCommands>

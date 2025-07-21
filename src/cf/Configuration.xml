@@ -845,6 +845,7 @@
 			<Role>ПросмотрОписанияИзмененийПрограммы</Role>
 			<Role>ПросмотрОтделов</Role>
 			<Role>ПросмотрОткрытыхМенюПользователейБота</Role>
+			<Role>ПросмотрОтпусков</Role>
 			<Role>ПросмотрОтчетаДвиженияДокумента</Role>
 			<Role>ПросмотрОфисов</Role>
 			<Role>ПросмотрПодсистемыБоты</Role>
@@ -871,6 +872,7 @@
 			<Role>РедактированиеКомандБотов</Role>
 			<Role>РедактированиеНастроекИнтеграции</Role>
 			<Role>РедактированиеОткрытыхМенюПользователейБота</Role>
+			<Role>РедактированиеОтпусков</Role>
 			<Role>РедактированиеПечатныхФорм</Role>
 			<Role>РедактированиеПланаВидовХарактеристикПредопределенныеЗначения</Role>
 			<Role>РедактированиеПользовательскихФункций</Role>
@@ -1648,9 +1650,9 @@
 			<Document>_ПримерДляНабораЗаписей</Document>
 			<Document>КадровыеИзменения</Document>
 			<Document>Обучения</Document>
+			<Document>ПланированиеОтпуска</Document>
 			<Document>ОценкаСотрудников</Document>
 			<Document>РегистрацияРабочегоВремени</Document>
-			<Document>ПланированиеОтпуска</Document>
 			<Enum>ВариантыАвторизацииБота</Enum>
 			<Enum>ВариантыОчисткиФайлов</Enum>
 			<Enum>ВариантыПериода</Enum>
@@ -1720,6 +1722,7 @@
 			<Enum>ФорматыХраненияОдностраничныхФайлов</Enum>
 			<Enum>ЦветностиИзображения</Enum>
 			<Report>АнализПравДоступа</Report>
+			<Report>ГрафикОтпусков</Report>
 			<Report>ДвиженияДокумента</Report>
 			<Report>КомпетенцииСертификатыСотрудников</Report>
 			<Report>МестаИспользованияСсылок</Report>
@@ -1732,7 +1735,6 @@
 			<Report>ПрогрессОтложенногоОбновления</Report>
 			<Report>СведенияОПользователях</Report>
 			<Report>УниверсальныйОтчет</Report>
-			<Report>ГрафикОтпусков</Report>
 			<DataProcessor>АвтоматическоеИзвлечениеТекстов</DataProcessor>
 			<DataProcessor>АктивныеПользователи</DataProcessor>
 			<DataProcessor>БлокировкаРаботыПользователей</DataProcessor>
@@ -1830,6 +1832,7 @@
 			<InformationRegister>ОбщиеНастройкиУзловИнформационныхБаз</InformationRegister>
 			<InformationRegister>ОбщиеПоставляемыеМакетыПечати</InformationRegister>
 			<InformationRegister>ОткрытоеМенюПользователяБота</InformationRegister>
+			<InformationRegister>ОтпускаСотрудников</InformationRegister>
 			<InformationRegister>ПакетыИнформацииПриЗапуске</InformationRegister>
 			<InformationRegister>ПараметрыОграниченияДоступа</InformationRegister>
 			<InformationRegister>ПараметрыРаботыВерсийРасширений</InformationRegister>
@@ -1871,7 +1874,6 @@
 			<InformationRegister>УдаляемыеОбъекты</InformationRegister>
 			<InformationRegister>УчастникиВидеоЧатов</InformationRegister>
 			<InformationRegister>ФайлыВРабочемКаталоге</InformationRegister>
-			<InformationRegister>ОтпускаСотрудников</InformationRegister>
 			<AccumulationRegister>УчетВремениПоКомпетенциям</AccumulationRegister>
 			<AccumulationRegister>УчетРабочегоВремени</AccumulationRegister>
 			<ChartOfCharacteristicTypes>ДополнительныеРеквизитыИСведения</ChartOfCharacteristicTypes>

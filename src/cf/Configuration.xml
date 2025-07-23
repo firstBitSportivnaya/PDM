@@ -845,6 +845,7 @@
 			<Role>ПросмотрОписанияИзмененийПрограммы</Role>
 			<Role>ПросмотрОтделов</Role>
 			<Role>ПросмотрОткрытыхМенюПользователейБота</Role>
+			<Role>ПросмотрОтпусков</Role>
 			<Role>ПросмотрОтчетаДвиженияДокумента</Role>
 			<Role>ПросмотрОфисов</Role>
 			<Role>ПросмотрПодсистемыБоты</Role>
@@ -871,6 +872,7 @@
 			<Role>РедактированиеКомандБотов</Role>
 			<Role>РедактированиеНастроекИнтеграции</Role>
 			<Role>РедактированиеОткрытыхМенюПользователейБота</Role>
+			<Role>РедактированиеОтпусков</Role>
 			<Role>РедактированиеПечатныхФорм</Role>
 			<Role>РедактированиеПланаВидовХарактеристикПредопределенныеЗначения</Role>
 			<Role>РедактированиеПользовательскихФункций</Role>
@@ -1648,6 +1650,7 @@
 			<Document>_ПримерДляНабораЗаписей</Document>
 			<Document>КадровыеИзменения</Document>
 			<Document>Обучения</Document>
+			<Document>ПланированиеОтпуска</Document>
 			<Document>ОценкаСотрудников</Document>
 			<Document>РегистрацияРабочегоВремени</Document>
 			<Enum>ВариантыАвторизацииБота</Enum>
@@ -1719,6 +1722,7 @@
 			<Enum>ФорматыХраненияОдностраничныхФайлов</Enum>
 			<Enum>ЦветностиИзображения</Enum>
 			<Report>АнализПравДоступа</Report>
+			<Report>ГрафикОтпусков</Report>
 			<Report>ДвиженияДокумента</Report>
 			<Report>КомпетенцииСертификатыСотрудников</Report>
 			<Report>МестаИспользованияСсылок</Report>
@@ -1828,6 +1832,7 @@
 			<InformationRegister>ОбщиеНастройкиУзловИнформационныхБаз</InformationRegister>
 			<InformationRegister>ОбщиеПоставляемыеМакетыПечати</InformationRegister>
 			<InformationRegister>ОткрытоеМенюПользователяБота</InformationRegister>
+			<InformationRegister>ОтпускаСотрудников</InformationRegister>
 			<InformationRegister>ПакетыИнформацииПриЗапуске</InformationRegister>
 			<InformationRegister>ПараметрыОграниченияДоступа</InformationRegister>
 			<InformationRegister>ПараметрыРаботыВерсийРасширений</InformationRegister>

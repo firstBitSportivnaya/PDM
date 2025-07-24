@@ -4,11 +4,6 @@
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<Autofill>false</Autofill>
 	</AutoCommandBar>
-	<Events>
-		<Event name="ChoiceProcessing">ОбработкаВыбора</Event>
-		<Event name="BeforeClose">ПередЗакрытием</Event>
-		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
-	</Events>
 	<ChildItems>
 		<UsualGroup name="СписокКомпоновщикНастроекПользовательскиеНастройки" id="1">
 			<Title>
@@ -77,7 +72,6 @@
 				<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="15"/>
 			</SearchControlAddition>
 			<Events>
-				<Event name="ValueChoice">СписокВыборЗначения</Event>
 				<Event name="Selection">СписокВыбор</Event>
 			</Events>
 			<ChildItems>

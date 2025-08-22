@@ -124,11 +124,11 @@
 			</EnumValue>
 			<EnumValue uuid="7ec56cbf-e89f-4694-b6bb-bb707f2a3cfc">
 				<Properties>
-					<Name>ПриступилКВвыполнениюЗадания</Name>
+					<Name>ПриступилКВыполнениюЗадания</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Приступил к ввыполнению задания</v8:content>
+							<v8:content>Приступил к выполнению задания</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>

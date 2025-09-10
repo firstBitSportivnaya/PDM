@@ -18,7 +18,11 @@
 				<xr:Ref>CommonPicture.ПодсистемаУчетРазвитияСотрудников</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
-			<Content/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ИндивидуальныйПланРазвития</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ЗадачиИПР</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ВыполнениеЗаданийИПР</xr:Item>
+			</Content>
 		</Properties>
 		<ChildObjects>
 			<Subsystem>Обучения</Subsystem>

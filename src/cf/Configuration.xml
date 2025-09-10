@@ -917,6 +917,11 @@
 			<Role>ЧтениеУчастниковВидеоЧатов</Role>
 			<Role>ЧтениеУчетныхЗаписейЭлектроннойПочты</Role>
 			<Role>ЧтениеШаговВыполненияЗаданий</Role>
+			<Role>ИзменениеДокументовИПР</Role>
+			<Role>ИзменениеДатыДокументовИПР</Role>
+			<Role>ЧтениеДокументовИПР</Role>
+			<Role>ЧтениеЗадачиИПР</Role>
+			<Role>ИзменениеЗадачиИПР</Role>
 			<CommonTemplate>BSLEditor</CommonTemplate>
 			<CommonTemplate>JSONEditor</CommonTemplate>
 			<CommonTemplate>ДанныеПечатиОбщиеРеквизиты</CommonTemplate>
@@ -1645,11 +1650,13 @@
 			<Catalog>Файлы</Catalog>
 			<Catalog>ШагиВыполненияЗаданий</Catalog>
 			<Catalog>ЯзыкиПечатныхФорм</Catalog>
+			<Catalog>ЗадачиИПР</Catalog>
 			<Document>_ПримерДляНабораЗаписей</Document>
 			<Document>КадровыеИзменения</Document>
 			<Document>Обучения</Document>
 			<Document>ОценкаСотрудников</Document>
 			<Document>РегистрацияРабочегоВремени</Document>
+			<Document>ИндивидуальныйПланРазвития</Document>
 			<Enum>ВариантыАвторизацииБота</Enum>
 			<Enum>ВариантыОчисткиФайлов</Enum>
 			<Enum>ВариантыПериода</Enum>
@@ -1718,6 +1725,8 @@
 			<Enum>ФорматыХраненияМногостраничныхФайлов</Enum>
 			<Enum>ФорматыХраненияОдностраничныхФайлов</Enum>
 			<Enum>ЦветностиИзображения</Enum>
+			<Enum>ТипыЗаданий</Enum>
+			<Enum>СтатусыЗадачИПР</Enum>
 			<Report>АнализПравДоступа</Report>
 			<Report>ДвиженияДокумента</Report>
 			<Report>КомпетенцииСертификатыСотрудников</Report>
@@ -1869,6 +1878,7 @@
 			<InformationRegister>УдаляемыеОбъекты</InformationRegister>
 			<InformationRegister>УчастникиВидеоЧатов</InformationRegister>
 			<InformationRegister>ФайлыВРабочемКаталоге</InformationRegister>
+			<InformationRegister>ВыполнениеЗаданийИПР</InformationRegister>
 			<AccumulationRegister>УчетВремениПоКомпетенциям</AccumulationRegister>
 			<AccumulationRegister>УчетРабочегоВремени</AccumulationRegister>
 			<ChartOfCharacteristicTypes>ДополнительныеРеквизитыИСведения</ChartOfCharacteristicTypes>

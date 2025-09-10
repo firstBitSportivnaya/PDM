@@ -9,7 +9,7 @@
 					<v8:content>Форма выбора (с корзиной)</v8:content>
 				</v8:item>
 			</Synonym>
-			<Comment/>
+			<Comment>НЕ ИСПОЛЬЗУЕТСЯ</Comment>
 			<FormType>Managed</FormType>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UsePurposes>

@@ -79,7 +79,7 @@
 						<v8:NumberQualifiers>
 							<v8:Digits>15</v8:Digits>
 							<v8:FractionDigits>0</v8:FractionDigits>
-							<v8:AllowedSign>Any</v8:AllowedSign>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
 						</v8:NumberQualifiers>
 					</Type>
 					<PasswordMode>false</PasswordMode>
@@ -170,7 +170,7 @@
 					<ExtendedEdit>false</ExtendedEdit>
 					<MinValue xsi:nil="true"/>
 					<MaxValue xsi:nil="true"/>
-					<FillFromFillingValue>false</FillFromFillingValue>
+					<FillFromFillingValue>true</FillFromFillingValue>
 					<FillValue xsi:nil="true"/>
 					<FillChecking>DontCheck</FillChecking>
 					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
@@ -183,8 +183,8 @@
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 					<Master>false</Master>
 					<MainFilter>true</MainFilter>
-					<DenyIncompleteValues>false</DenyIncompleteValues>
-					<Indexing>DontIndex</Indexing>
+					<DenyIncompleteValues>true</DenyIncompleteValues>
+					<Indexing>Index</Indexing>
 					<FullTextSearch>Use</FullTextSearch>
 					<DataHistory>Use</DataHistory>
 					<TypeReductionMode>TransformValues</TypeReductionMode>
@@ -226,8 +226,8 @@
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 					<Master>false</Master>
 					<MainFilter>true</MainFilter>
-					<DenyIncompleteValues>false</DenyIncompleteValues>
-					<Indexing>DontIndex</Indexing>
+					<DenyIncompleteValues>true</DenyIncompleteValues>
+					<Indexing>Index</Indexing>
 					<FullTextSearch>Use</FullTextSearch>
 					<DataHistory>Use</DataHistory>
 					<TypeReductionMode>TransformValues</TypeReductionMode>
